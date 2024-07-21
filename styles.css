@@ -1,0 +1,101 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    position: relative; /* Ensure positioning context for absolute elements */
+    overflow: hidden; /* Prevents scrollbars due to the video background */
+}
+
+/* Video background styles */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove the iframe border */
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    border-right: 1px solid #ddd; /* Line to be removed on index page */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow to be removed on index page */
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translateY(40px); /* Move the entire list down */
+}
+
+nav ul li {
+    margin: 20px 0; /* Maintain spacing between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block; /* Ensure links are block elements for consistent spacing */
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Container styles */
+.container {
+    margin-left: 220px; /* Space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjust width to account for sidebar */
+    padding-top: 60px; /* Align with h1 */
+}
+
+/* Heading styles */
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Section styles */
+section {
+    margin-top: 20px;
+}
+
+section p {
+    margin: 0;
+}
+
+/* Specific styles for index.html */
+.home-page nav {
+    border-right: none; /* Remove the border line */
+    box-shadow: none; /* Remove the shadow */
+}
+
+.home-page h1 {
+    position: absolute; /* Take it out of the normal flow */
+    top: 20px; /* Position from the top (adjust this value to move the header down) */
+    left: 20px; /* Position from the left */
+    margin: 0; /* Remove any default margin */
+    font-size: 24px; /* Ensure font size is correct */
+}
