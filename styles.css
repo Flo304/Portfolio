@@ -25,7 +25,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    transform: translateY(40px); /* Move the entire list down */
+    transform: translateY(80px); /* Move the entire list down */
 }
 
 nav ul li {
@@ -59,11 +59,7 @@ h1 {
 
 /* Section styles */
 section {
-    margin-top: 20px;
-}
-
-section p {
-    margin: 0;
+    margin-top: 20px; /* Maintain margin similar to other pages */
 }
 
 /* Specific styles for index.html */
@@ -72,12 +68,25 @@ section p {
     box-shadow: none; /* Remove the shadow */
 }
 
+/* Keep title as it is */
 .home-page h1 {
     position: absolute; /* Take it out of the normal flow */
     top: 20px; /* Position from the top (adjust this value to move the header down) */
     left: 20px; /* Position from the left */
     margin: 0; /* Remove any default margin */
     font-size: 24px; /* Ensure font size is correct */
+}
+
+/* Specific styles for the section in index.html */
+.home-page section {
+    display: block; /* Ensure section behaves like a block element */
+    margin-top: 50px; /* Align section text below the title */
+}
+
+.home-page section p {
+    font-size: 16px; /* Adjust font size if needed */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove margin to match other pages */
 }
 
 /* Specific styles for about.html */
