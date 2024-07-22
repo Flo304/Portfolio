@@ -3,8 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    position: relative; /* Ensure positioning context for absolute elements */
-    overflow: hidden; /* Prevents scrollbars due to the video background */
+    position: relative;
+    overflow: hidden;
+    background-image: url('Assets/renderr5.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center bottom; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    height: 100vh; /* Ensure it covers the viewport height */
 }
 
 /* Navigation styles */
@@ -14,10 +19,10 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    background: #fff;
-    border-right: 1px solid #ddd; /* Border for all pages except index */
+    background: rgba(255, 255, 255, 0.6); /* Slightly transparent background */
+    border-right: 1px solid #ddd;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for all pages except index */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation list styles */
@@ -25,84 +30,89 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    transform: translateY(80px); /* Move the entire list down */
+    transform: translateY(80px);
 }
 
 nav ul li {
-    margin: 20px 0; /* Maintain spacing between navigation items */
+    margin: 20px 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #333; /* Default color */
     font-size: 18px;
-    display: block; /* Ensure links are block elements for consistent spacing */
+    display: block;
 }
 
+/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #007bff;
+    color: green; /* Change color to green on hover */
 }
 
 /* Container styles */
 .container {
-    margin-left: 220px; /* Space for the sidebar */
+    margin-left: 220px;
     padding: 20px;
-    width: calc(100% - 240px); /* Adjust width to account for sidebar */
-    padding-top: 60px; /* Align with h1 */
+    width: calc(100% - 240px);
+    padding-top: 60px;
 }
 
 /* Heading styles */
 h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 36px; /* Increased font size */
 }
 
-/* Section styles */
-section {
-    margin-top: 20px; /* Maintain margin similar to other pages */
+/* Name styles */
+.name {
+    font-size: 16px; /* Adjust font size if needed */
+    margin: 0; /* Remove margin if any */
+}
+
+/* Welcome text styles */
+.welcome-text {
+    margin: 0;
+    font-size: 16px; /* Adjust font size if needed */
+    position: relative; /* Ensure positioning context */
+    top: 50px; /* Adjust this value to move the text down */
 }
 
 /* Specific styles for index.html */
 .home-page nav {
-    border-right: none; /* Remove the border line */
-    box-shadow: none; /* Remove the shadow */
+    border-right: none;
+    box-shadow: none;
 }
 
-/* Keep title as it is */
 .home-page h1 {
-    position: absolute; /* Take it out of the normal flow */
-    top: 20px; /* Position from the top (adjust this value to move the header down) */
-    left: 20px; /* Position from the left */
-    margin: 0; /* Remove any default margin */
-    font-size: 24px; /* Ensure font size is correct */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 24px; /* This can be adjusted if needed */
 }
 
-/* Specific styles for the section in index.html */
-.home-page section {
-    display: block; /* Ensure section behaves like a block element */
-    margin-top: 50px; /* Align section text below the title */
-}
-
-.home-page section p {
+.home-page .name {
+    position: absolute;
+    top: 60px; /* Adjust to position below the h1 */
+    left: 20px; /* Align with h1 */
     font-size: 16px; /* Adjust font size if needed */
-    text-align: left; /* Align text to the left */
-    margin: 0; /* Remove margin to match other pages */
+    margin: 0;
 }
 
 /* Specific styles for about.html */
 .about-page nav {
-    border-right: none; /* Remove the border line */
-    box-shadow: none; /* Remove the shadow */
+    border-right: none;
+    box-shadow: none;
 }
 
 /* Specific styles for architecture.html */
 .architecture-page nav {
-    border-right: none; /* Remove the border line */
-    box-shadow: none; /* Remove the shadow */
+    border-right: none;
+    box-shadow: none;
 }
 
 /* Specific styles for responsible-design.html */
 .responsible-design-page nav {
-    border-right: none; /* Remove the border line */
-    box-shadow: none; /* Remove the shadow */
+    border-right: none;
+    box-shadow: none;
 }
