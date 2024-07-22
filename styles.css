@@ -3,26 +3,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    position: relative;
-    overflow: hidden;
-    background-image: url('Assets/renderr5.png');
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center bottom; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition */
+    flex-direction: column; /* Stack elements vertically (nav + title block on top) */
     height: 100vh; /* Ensure it covers the viewport height */
+}
+
+/* Background image for home page only */
+.home-page {
+    background-image: url('Assets/renderr5.png');
+    background-size: 22.22%; /* Adjust to your desired size */
+    background-position: right; /* Position the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+/* Header block styles */
+.header {
+    display: flex;
+    align-items: center; /* Center items vertically within the header */
+    padding: 10px 20px; /* Padding around the header */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background for the header */
+    border-bottom: 1px solid #ddd; /* Bottom border for separation */
 }
 
 /* Navigation styles */
 nav {
-    position: fixed;
-    width: 200px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.6); /* Slightly transparent background */
-    border-right: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Horizontal layout */
+    align-items: center; /* Center items vertically */
+    margin-left: 20px; /* Margin to space out from the title */
 }
 
 /* Navigation list styles */
@@ -30,18 +36,17 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    transform: translateY(80px);
+    display: flex; /* Horizontal layout for navigation items */
 }
 
 nav ul li {
-    margin: 20px 0;
+    margin: 0 10px; /* Space between nav items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333; /* Default color */
-    font-size: 18px;
-    display: block;
+    font-size: 14px;
 }
 
 /* Hover effect for navigation links */
@@ -49,18 +54,19 @@ nav ul li a:hover {
     color: green; /* Change color to green on hover */
 }
 
-/* Container styles */
-.container {
-    margin-left: 220px;
-    padding: 20px;
-    width: calc(100% - 240px);
-    padding-top: 60px;
-}
-
-/* Heading styles */
+/* Title styles */
 h1 {
     margin: 0;
     font-size: 36px; /* Increased font size */
+    margin-right: 20px; /* Space between title and nav */
+}
+
+/* Container styles */
+.container {
+    margin: 0; /* No margin needed as nav and title are fixed */
+    padding: 20px;
+    width: 100%; /* Full width */
+    padding-top: 20px; /* Adjust top padding if needed */
 }
 
 /* Name styles */
@@ -78,41 +84,39 @@ h1 {
 }
 
 /* Specific styles for index.html */
-.home-page nav {
-    border-right: none;
-    box-shadow: none;
+.home-page {
+    padding-top: 0; /* Remove padding top */
+}
+
+.home-page .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    z-index: 10; /* Ensure it is above other content */
 }
 
 .home-page h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     margin: 0;
-    font-size: 24px; /* This can be adjusted if needed */
+    font-size: 42px; /* Adjusted to match desired size */
 }
 
 .home-page .name {
-    position: absolute;
-    top: 60px; /* Adjust to position below the h1 */
-    left: 20px; /* Align with h1 */
-    font-size: 16px; /* Adjust font size if needed */
+    font-size: 14px; /* Adjust font size if needed */
     margin: 0;
 }
 
 /* Specific styles for about.html */
-.about-page nav {
-    border-right: none;
-    box-shadow: none;
+.about-page .header {
+    /* Add any specific styles if needed */
 }
 
 /* Specific styles for architecture.html */
-.architecture-page nav {
-    border-right: none;
-    box-shadow: none;
+.architecture-page .header {
+    /* Add any specific styles if needed */
 }
 
 /* Specific styles for responsible-design.html */
-.responsible-design-page nav {
-    border-right: none;
-    box-shadow: none;
+.responsible-design-page .header {
+    /* Add any specific styles if needed */
 }
