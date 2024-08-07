@@ -64,7 +64,7 @@ h1 {
 .container {
     margin: 0 auto; /* No margin needed as nav and title are fixed */
     padding: 20px;
-    width: 95.5%; /* Full width */
+    width: 92%; /* Full width */
     padding-top: 20px; /* Adjust top padding if needed */
 }
 
