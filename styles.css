@@ -7,9 +7,9 @@ body {
     height: 100vh; /* Ensure it covers the viewport height */
 }
 
-/* Background image for home page only */
+/* Background styles for home page only */
 .home-page {
-    background-image: url('Assets/renderr5.png');
+    /* Removed background image */
     background-size: 22.22%; /* Adjust to your desired size */
     background-position: right; /* Position the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -63,9 +63,9 @@ h1 {
 
 /* Container styles */
 .container {
-    margin: 0; /* No margin needed as nav and title are fixed */
+    margin: 0 auto; /* No margin needed as nav and title are fixed */
     padding: 20px;
-    width: 100%; /* Full width */
+    width: 95.5%; /* Full width */
     padding-top: 20px; /* Adjust top padding if needed */
 }
 
