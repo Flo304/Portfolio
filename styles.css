@@ -9,7 +9,6 @@ body {
 
 /* Background styles for home page only */
 .home-page {
-    /* Removed background image */
     background-size: 22.22%; /* Adjust to your desired size */
     background-position: right; /* Position the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -104,6 +103,62 @@ h1 {
 .home-page .name {
     font-size: 14px; /* Adjust font size if needed */
     margin: 0;
+}
+
+/* Cube styles */
+.cube-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(-30deg) rotateY(45deg); /* Axonometric view */
+    perspective: 500px; /* Perspective for 3D effect */
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* Define each face of the cube with proper positioning */
+.cube::before,
+.cube::after,
+.cube div:nth-child(1),
+.cube div:nth-child(2),
+.cube div:nth-child(3),
+.cube div:nth-child(4) {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border: 1px solid #ccc; /* Optional: add a border to visualize the edges */
+}
+
+/* Faces of the cube */
+.cube::before {
+    transform: rotateY(0deg) translateZ(50px); /* Front face */
+}
+
+.cube::after {
+    transform: rotateY(90deg) translateZ(50px); /* Right face */
+}
+
+.cube div:nth-child(1) {
+    transform: rotateX(90deg) translateZ(50px); /* Top face */
+}
+
+.cube div:nth-child(2) {
+    transform: rotateX(-90deg) translateZ(50px); /* Bottom face */
+}
+
+.cube div:nth-child(3) {
+    transform: rotateY(-90deg) translateZ(50px); /* Left face */
+}
+
+.cube div:nth-child(4) {
+    transform: rotateY(180deg) translateZ(50px); /* Back face */
 }
 
 /* Specific styles for about.html */
