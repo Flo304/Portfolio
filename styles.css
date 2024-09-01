@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack elements vertically (nav + title block on top) */
     height: 100vh; /* Ensure it covers the viewport height */
+    font-size: 16px; /* Default font size for mobile */
 }
 
 /* Background styles for home page only */
@@ -27,7 +28,7 @@ body {
 nav {
     display: flex; /* Horizontal layout */
     align-items: center; /* Center items vertically */
-    margin-left: 20px; /* Margin to space out from the title */
+    margin-left: 44px; /* Margin to space out from the title */
 }
 
 /* Navigation list styles */
@@ -80,6 +81,8 @@ h1 {
     font-size: 16px; /* Adjust font size if needed */
     position: relative; /* Ensure positioning context */
     top: 50px; /* Adjust this value to move the text down */
+    transform: translateX(20px); /* Moves the text 20px to the right */
+    text-align: left; /* Ensure the text itself is aligned to the left */
 }
 
 /* Specific styles for index.html */
@@ -105,62 +108,6 @@ h1 {
     margin: 0;
 }
 
-/* Cube styles */
-.cube-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(-30deg) rotateY(45deg); /* Axonometric view */
-    perspective: 500px; /* Perspective for 3D effect */
-}
-
-.cube {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-/* Define each face of the cube with proper positioning */
-.cube::before,
-.cube::after,
-.cube div:nth-child(1),
-.cube div:nth-child(2),
-.cube div:nth-child(3),
-.cube div:nth-child(4) {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: grey;
-    border: 1px solid #ccc; /* Optional: add a border to visualize the edges */
-}
-
-/* Faces of the cube */
-.cube::before {
-    transform: rotateY(0deg) translateZ(50px); /* Front face */
-}
-
-.cube::after {
-    transform: rotateY(90deg) translateZ(50px); /* Right face */
-}
-
-.cube div:nth-child(1) {
-    transform: rotateX(90deg) translateZ(50px); /* Top face */
-}
-
-.cube div:nth-child(2) {
-    transform: rotateX(-90deg) translateZ(50px); /* Bottom face */
-}
-
-.cube div:nth-child(3) {
-    transform: rotateY(-90deg) translateZ(50px); /* Left face */
-}
-
-.cube div:nth-child(4) {
-    transform: rotateY(180deg) translateZ(50px); /* Back face */
-}
-
 /* Specific styles for about.html */
 .about-page .header {
     /* Add any specific styles if needed */
@@ -174,4 +121,17 @@ h1 {
 /* Specific styles for responsible-design.html */
 .responsible-design-page .header {
     /* Add any specific styles if needed */
+}
+
+/* Responsive font sizing */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
 }
