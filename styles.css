@@ -49,10 +49,18 @@ nav ul li a {
     font-size: 14px;
 }
 
-/* Hover effect for navigation links */
-nav ul li a:hover {
-    color: green; /* Change color to green on hover */
+/* Apply green color to all links by default */
+a {
+    color: green; /* Default link color */
+    text-decoration: none; /* Remove underline if you don't want it by default */
 }
+
+/* Apply green color on hover as well */
+a:hover {
+    color: green; /* Change color to green on hover */
+    text-decoration: none; /* Optional: Add underline on hover */
+}
+
 
 /* Title styles */
 h1 {
