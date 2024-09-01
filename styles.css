@@ -49,10 +49,11 @@ nav ul li a {
     font-size: 14px;
 }
 
-/* Apply green color to all links by default */
+/* Default link color */
 a {
-    color: green; /* Default link color */
-    text-decoration: none; /* Remove underline if you don't want it by default */
+    color: #333; /* Default link color, change this as needed */
+    text-decoration: none; /* Remove underline by default */
+    font-size: 16px; /* Set link font size to 16px */
 }
 
 /* Apply green color on hover as well */
