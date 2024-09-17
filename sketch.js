@@ -1,4 +1,4 @@
-Could plants start growing on the cube when mouse is moved: let vertices = [];
+let vertices = [];
 let baseSize = 700; // Base size of the cube
 let explosionIntensity = 2.0; // Increase this for a more pronounced effect
 
