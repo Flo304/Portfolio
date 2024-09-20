@@ -28,7 +28,8 @@ body {
 nav {
     display: flex; /* Horizontal layout */
     align-items: center; /* Center items vertically */
-    margin-left: 44px; /* Margin to space out from the title */
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px 20px; /* Optional: add padding around the nav */
 }
 
 /* Navigation list styles */
@@ -61,7 +62,6 @@ a:hover {
     color: green; /* Change color to green on hover */
     text-decoration: none; /* Optional: Add underline on hover */
 }
-
 
 /* Title styles */
 h1 {
