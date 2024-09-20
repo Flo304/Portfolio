@@ -2,145 +2,65 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically (nav + title block on top) */
-    height: 100vh; /* Ensure it covers the viewport height */
-    font-size: 16px; /* Default font size for mobile */
+    display: flex; /* Use flexbox to layout the sidebar and content */
+    height: 100vh; /* Full height of the viewport */
 }
 
-/* Background styles for home page only */
-.home-page {
-    background-size: 22.22%; /* Adjust to your desired size */
-    background-position: right; /* Position the image */
-    background-repeat: no-repeat; /* Prevent repetition */
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px; /* This moves the sidebar down by 500px */
 }
 
-/* Header block styles */
-.header {
-    display: flex;
-    align-items: center; /* Center items vertically within the header */
-    padding: 10px 20px; /* Padding around the header */
-    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background for the header */
-    border-bottom: 1px solid #ddd; /* Bottom border for separation */
-}
 
 /* Navigation styles */
 nav {
-    display: flex; /* Horizontal layout */
-    align-items: center; /* Center items vertically */
-    justify-content: flex-end; /* Align items to the right */
-    padding: 10px 20px; /* Optional: add padding around the nav */
+    margin-top: 20px; /* Space between header and nav */
 }
 
-/* Navigation list styles */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Horizontal layout for navigation items */
 }
 
 nav ul li {
-    margin: 0 10px; /* Space between nav items */
+    margin: 10px 0; /* Space between nav items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333; /* Default color */
-    font-size: 14px;
+    font-size: 16px; /* Font size for nav links */
 }
 
-/* Default link color */
-a {
-    color: #333; /* Default link color, change this as needed */
-    text-decoration: none; /* Remove underline by default */
-    font-size: 16px; /* Set link font size to 16px */
-}
 
-/* Apply green color on hover as well */
-a:hover {
-    color: green; /* Change color to green on hover */
-    text-decoration: none; /* Optional: Add underline on hover */
-}
 
 /* Title styles */
 h1 {
     margin: 0;
     font-size: 36px; /* Increased font size */
-    margin-right: 20px; /* Space between title and nav */
-}
-
-/* Container styles */
-.container {
-    margin: 0 auto; /* No margin needed as nav and title are fixed */
-    padding: 20px;
-    width: 92%; /* Full width */
-    padding-top: 20px; /* Adjust top padding if needed */
 }
 
 /* Name styles */
 .name {
-    font-size: 16px; /* Adjust font size if needed */
-    margin: 0; /* Remove margin if any */
+    font-size: 18px; /* Adjust font size if needed */
+    margin: 0; /* Remove margin */
+    margin-top: 10px; /* Space between header and nav */
+
 }
 
-/* Welcome text styles */
-.welcome-text {
-    margin: 0;
-    font-size: 16px; /* Adjust font size if needed */
-    position: relative; /* Ensure positioning context */
-    top: 50px; /* Adjust this value to move the text down */
-    transform: translateX(20px); /* Moves the text 20px to the right */
-    text-align: left; /* Ensure the text itself is aligned to the left */
+/* Cube styles (keep your existing styles for the cube) */
+.cube-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* Additional styles for the animation */
 }
 
-/* Specific styles for index.html */
-.home-page {
-    padding-top: 0; /* Remove padding top */
-}
-
-.home-page .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the viewport */
-    z-index: 10; /* Ensure it is above other content */
-}
-
-.home-page h1 {
-    margin: 0;
-    font-size: 42px; /* Adjusted to match desired size */
-}
-
-.home-page .name {
-    font-size: 14px; /* Adjust font size if needed */
-    margin: 0;
-}
-
-/* Specific styles for about.html */
-.about-page .header {
-    /* Add any specific styles if needed */
-}
-
-/* Specific styles for architecture.html */
-.architecture-page .header {
-    /* Add any specific styles if needed */
-}
-
-/* Specific styles for responsible-design.html */
-.responsible-design-page .header {
-    /* Add any specific styles if needed */
-}
-
-/* Responsive font sizing */
-@media (min-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-    }
-}
+/* Add any cube-related styles here */
