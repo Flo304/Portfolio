@@ -4,6 +4,7 @@ body {
     margin: 0;
     display: flex; /* Use flexbox to layout the sidebar and content */
     height: 100vh; /* Full height of the viewport */
+    position: relative; /* Allow absolute positioning of children */
 }
 
 /* Sidebar styles */
@@ -15,8 +16,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 50px; /* This moves the sidebar down */
-    width: 250px; /* Adjust as needed */
-    padding: 20px;
+    z-index: 1; /* Ensure sidebar is above the animation */
 }
 
 /* Navigation styles */
@@ -67,12 +67,21 @@ h1 {
     margin-top: 10px; /* Space between header and nav */
 }
 
-/* Cube styles (keep your existing styles for the cube) */
+/* Main content styles */
 .cube-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    /* Additional styles for the animation */
+    /*position: absolute; /* Keep this for positioning */
+    top: 50%; /* Center vertically */
+    margin-left: -400px; /* Set this value to move the cube to the right or left */
+    transform: translateY(-50%); /* Only translate vertically */
+    z-index: 0; /* Ensure it stays behind the sidebar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the cube horizontally */
+    align-items: center; /* Center the cube vertically */
 }
 
-/* Add any cube-related styles here */
+/* Cube styles */
+.cube {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    /* Additional cube styles here */
+}
