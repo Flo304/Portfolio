@@ -4,46 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groove - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex; /* Aligns sidebar and content horizontally */
+        }
+
+        .sidebar {
+            width: 250px; /* Adjust sidebar width */
+            padding: 20px; /* Sidebar padding */
+        }
+
+        .content {
+            flex: 1; /* Allows content to fill the remaining space */
+            padding: 20px; /* Add padding around content */
+        }
+
+        nav ul {
+            list-style-type: none; /* Removes default list style */
+            padding: 0; /* Removes padding */
+        }
+
+        nav li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+    </style>
 </head>
 <body class="groove"> <!-- Unique class for styling -->
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="responsible-design.html">Responsible Design</a></li>
-        </ul>
-    </nav>
-    
-    <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
         <h1>Groove</h1>
-        
-        <section>
-            <p>
-            
-                <a href="teawi.html">Teawi</a>.
-                <a href="groove.html">Groove</a>.
-                <a href="stool.html">Stool</a>.
-                <a href="syn.html">Syn</a>.
-                <a href="designing-with-other-intelligences.html">Designing with other intelligences</a>.
-            </p>
+        <p class="name">Flora</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="interior-architecture.html">Interior Architecture</a>
+                    <ul>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
+                        <li><a href="c-mallorca.html">C. Mallorca</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="osbproject.html">OSB Project</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="responsible-design.html">Responsible Design</a>
+                    <ul>
+                        <li><a href="teawi.html">Teawi</a></li>
+                        <li><a href="groove.html">Groove</a></li>
+                        <li><a href="stool.html">Stool</a></li>
+                        <li><a href="syn.html">Syn</a></li>
+                        <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+       
         </section>
 
         <!-- First image -->
-        <img src="Assets/lamp1.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 100px; margin-bottom: 20px;">
+        <img src="Assets/lamp1.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 200px; margin-bottom: 20px;">
 
-        <!-- First image -->
-        <img src="Assets/photojurylamp3.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 100px; margin-bottom: 20px;">
+        <!-- Second image -->
+        <img src="Assets/photojurylamp3.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
 
-        <!-- First image -->
-        <img src="Assets/floorlampfixed.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 100px; margin-bottom: 20px;">
+        <!-- Third image -->
+        <img src="Assets/floorlampfixed.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
 
-        <!-- First image -->
-        <img src="Assets/groove.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 100px; margin-bottom: 20px;">
-
-
+        <!-- Fourth image -->
+        <img src="Assets/groove.jpg" alt="Groove Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
     </div>
 </body>
 </html>

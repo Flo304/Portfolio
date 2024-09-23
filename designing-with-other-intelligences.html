@@ -3,56 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designing with other intelligences - Portfolio</title>
+    <title>Designing with Other Intelligences - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex; /* Aligns sidebar and content horizontally */
+        }
+
+        .sidebar {
+            width: 250px; /* Adjust sidebar width */
+            padding: 20px; /* Sidebar padding */
+        }
+
+        .content {
+            flex: 1; /* Allows content to fill the remaining space */
+            padding: 20px; /* Add padding around content */
+        }
+
+        nav ul {
+            list-style-type: none; /* Removes default list style */
+            padding: 0; /* Removes padding */
+        }
+
+        nav li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+    </style>
 </head>
 <body class="designing-with-other-intelligences"> <!-- Unique class for styling -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1>Designing with Other Intelligences</h1>
+        <p class="name">Flora</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="interior-architecture.html">Interior Architecture</a>
+                    <ul>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
+                        <li><a href="c-mallorca.html">C. Mallorca</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="osbproject.html">OSB Project</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="responsible-design.html">Responsible Design</a>
+                    <ul>
+                        <li><a href="teawi.html">Teawi</a></li>
+                        <li><a href="groove.html">Groove</a></li>
+                        <li><a href="stool.html">Stool</a></li>
+                        <li><a href="syn.html">Syn</a></li>
+                        <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="responsible-design.html">Responsible Design</a></li>
-        </ul>
-    </nav>
-    
-    <div class="container">
-        <h1>Designing with other intelligences</h1>
+    <!-- Main content area -->
+    <div class="content">
         
-        <section>
-            <p>
-            
-                <a href="teawi.html">Teawi</a>.
-                <a href="groove.html">Groove</a>.
-                <a href="stool.html">Stool</a>.
-                <a href="syn.html">Syn</a>.
-                <a href="designing-with-other-intelligences.html">Designing with other intelligences</a>.
-            </p>
         </section>
 
         <!-- First image -->
         <img src="Assets/3Dprinetdstructure2.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 1px;">
         
-        
-        <!-- First image -->
+        <!-- Second image -->
         <img src="Assets/Modelimagewithcode.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;">
         
-        <!-- First image -->
+        <!-- Third image -->
         <img src="Assets/ModelImage1.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;">
 
-
-        <!-- First image -->
+        <!-- Fourth image -->
         <img src="Assets/3Dprinetdstructure2.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 1px;">
 
-        <!-- First image -->
+        <!-- Fifth image -->
         <img src="Assets/3dprintedb.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 20px; margin-bottom: 20px;">
-        
-       <!-- First image -->
-       <img src="Assets/Asset3.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;"> 
 
-    
-
+        <!-- Sixth image -->
+        <img src="Assets/Asset3.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;"> 
     </div>
 </body>
 </html>
