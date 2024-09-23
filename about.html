@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .content {
+            max-width: 400px; /* Set a fixed width for the square */
+            height: 250px; /* Set a fixed height for the square */
+            margin: 50px auto; /* Center the box with top margin */
+            padding: 20px; /* Add some padding */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            text-align: center; /* Center text inside the box */
+        }
+    </style>
 </head>
 <body class="about-page">
-    <!-- Sidebar for navigation -->
+    <!-- Sidebar -->
     <div class="sidebar">
         <h1>About</h1>
-        
+        <p class="name">Flora</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="interior-architecture.html">Interior Architecture</a>
+                    <ul>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
+                        <li><a href="c.mallorca.html">C. Mallorca</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="osbproject.html">OSB Project</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="responsible-design.html">Responsible Design</a>
+                    <ul>
+                        <li><a href="teawi.html">Teawi</a></li>
+                        <li><a href="groove.html">Groove</a></li>
+                        <li><a href="stool.html">Stool</a></li>
+                        <li><a href="syn.html">Syn</a></li>
+                        <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
+                    </ul>
+                </li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="architecture.html">Architecture</a></li>
-                <li><a href="responsible-design.html">Responsible Design</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- Main content area (About section) -->
     <div class="content">
-        <p style="max-width: 60%; font-size: 14px; line-height: 1.5;">
+        <p style="font-size: 14px; line-height: 1.5;">
             Interior Architect and Designer driven by her passion for details and constant curiosity...
         </p>
     </div>

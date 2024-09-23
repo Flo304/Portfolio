@@ -1,6 +1,6 @@
 /* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Mono", Arial, sans-serif;
     margin: 0;
     display: flex; /* Use flexbox to layout the sidebar and content */
     height: 100vh; /* Full height of the viewport */
@@ -14,9 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 50px; /* This moves the sidebar down by 500px */
+    margin-top: 50px; /* This moves the sidebar down */
 }
-
 
 /* Navigation styles */
 nav {
@@ -36,10 +35,22 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333; /* Default color */
-    font-size: 16px; /* Font size for nav links */
+    font-size: 14px; /* Font size for nav links */
 }
 
+/* Styles for subsections */
+nav ul ul {
+    padding-left: 0; /* Ensure no extra padding */
+}
 
+nav ul ul li {
+    margin: 2px 0; /* Adjust spacing between subsections */
+}
+
+nav ul ul li a {
+    color: #555; /* Different color for subsection links */
+    font-size: 10px; /* Smaller font size for subsections */
+}
 
 /* Title styles */
 h1 {
@@ -52,7 +63,6 @@ h1 {
     font-size: 18px; /* Adjust font size if needed */
     margin: 0; /* Remove margin */
     margin-top: 10px; /* Space between header and nav */
-
 }
 
 /* Cube styles (keep your existing styles for the cube) */
