@@ -9,14 +9,11 @@
     <style>
         body {
             display: flex; /* Aligns sidebar and content horizontally */
-            /*font-family: 'Roboto', sans-serif; /* Keeps the original font */
         }
 
         .sidebar {
             width: 200px; /* Adjust sidebar width */
-            /*background-color: #f8f8f8; /* Sidebar background */
             padding: 20px; /* Sidebar padding */
-            /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
         }
 
         .content {
@@ -32,6 +29,11 @@
         nav li {
             margin-bottom: 10px; /* Space between list items */
         }
+
+        /* Style for active navigation link */
+        .active {
+            font-weight: bold; /* Make active link bold */
+        }
     </style>
 </head>
 <body class="modernruin-page">
@@ -45,7 +47,7 @@
                 <li>
                     <a href="interior-architecture.html">Interior Architecture</a>
                     <ul>
-                        <li><a href="modernruin.html">Modern Ruin</a></li>
+                        <li><a href="modernruin.html" class="active">Modern Ruin</a></li> <!-- Add active class here -->
                         <li><a href="c-mallorca.html">C. Mallorca</a></li>
                         <li><a href="bathroom.html">Bathroom</a></li>
                         <li><a href="osbproject.html">OSB Project</a></li>

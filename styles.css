@@ -2,10 +2,11 @@
 body {
     font-family: "Roboto Mono", Arial, sans-serif;
     margin: 0;
-    display: flex; /* Use flexbox to layout the sidebar and content */
-    height: 100vh; /* Full height of the viewport */
-    position: relative; /* Allow absolute positioning of children */
-}
+    display: flex; 
+    height: 100vh; 
+    cursor: default;
+    }
+    
 
 /* Sidebar styles */
 .sidebar {
