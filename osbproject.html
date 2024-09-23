@@ -3,32 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecture - Portfolio</title>
+    <title>OSB Project - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="architecture-page">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="responsible-design.html">Responsible Design</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>Architecture</h1>
-        <section>
-            <p>
-                <a href="modernruin.html">ModernRuin</a>.
-                <a href="c-mallorca.html">C.Mallorca</a>.
-                <a href="bathroom.html">Bathroom</a>.
-                <a href="osbproject.html">Osbproject</a>.
-            </p>
-        </section>
+    <style>
+        body {
+            display: flex; /* Aligns sidebar and content horizontally */
+        }
 
-         <!-- First image -->
-         <img src="Assets/OSBPROJECT.jpg" alt="C. Mallorca Plans" style="max-width: 100%; height: auto; margin-top: 200px; margin-bottom: 20px;">
-         
+        .sidebar {
+            width: 250px; /* Adjust sidebar width */
+            padding: 20px; /* Sidebar padding */
+        }
+
+        .content {
+            flex: 1; /* Allows content to fill the remaining space */
+            padding: 20px; /* Add padding around content */
+        }
+
+        nav ul {
+            list-style-type: none; /* Removes default list style */
+            padding: 0; /* Removes padding */
+        }
+
+        nav li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+    </style>
+</head>
+<body class="osbproject-page">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1>OSB Project</h1>
+        <p class="name">Flora</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="interior-architecture.html">Interior Architecture</a>
+                    <ul>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
+                        <li><a href="c-mallorca.html">C.Mallorca</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="osbproject.html">OSB Project</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="responsible-design.html">Responsible Design</a>
+                    <ul>
+                        <li><a href="teawi.html">Teawi</a></li>
+                        <li><a href="groove.html">Groove</a></li>
+                        <li><a href="stool.html">Stool</a></li>
+                        <li><a href="syn.html">Syn</a></li>
+                        <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+        <section>
+            
+            <img src="Assets/OSBPROJECT.jpg" alt="OSB Project Plans" style="max-width: 100%; height: auto; margin-top: 195px; margin-bottom: 20px;">
+        </section>
     </div>
 </body>
 </html>
