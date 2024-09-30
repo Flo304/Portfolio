@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designing with Other Intelligences - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Roboto Font -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
     <style>
         body {
             display: flex; /* Aligns sidebar and content horizontally */
@@ -15,39 +16,36 @@
             padding: 20px; /* Sidebar padding */
         }
 
-        .content {
+        .container {
             flex: 1; /* Allows content to fill the remaining space */
             padding: 20px; /* Add padding around content */
         }
 
-        nav ul {
-            list-style-type: none; /* Removes default list style */
-            padding: 0; /* Removes padding */
+        section {
+            margin-top: 20px; /* Space between nav and first image */
         }
 
-        nav li {
-            margin-bottom: 10px; /* Space between list items */
-        }
-
-        /* Active link style */
-        nav ul li a.active {
-            font-weight: bold; /* Make active link bold */
+        img {
+            width: 100%; /* Ensures images are responsive */
+            height: auto; /* Maintains aspect ratio */
+            margin: 20px 0; /* Adds space above and below each image */
         }
     </style>
 </head>
 <body class="designing-with-other-intelligences-page"> <!-- Unique class for styling -->
+
     <!-- Sidebar -->
     <div class="sidebar">
         <h1>DWOI</h1>
-        <p class="name">Flora </p>
+        <p class="name">Flora</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li>
                     <a href="interior-architecture.html">Interior Architecture</a>
                     <ul>
-                        <li><a href="modernruin.html">Modern Ruin</a></li>
                         <li><a href="c-mallorca.html">C. Mallorca</a></li>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
                         <li><a href="bathroom.html">Bathroom</a></li>
                         <li><a href="osbproject.html">OSB Project</a></li>
                     </ul>
@@ -59,7 +57,7 @@
                         <li><a href="groove.html">Groove</a></li>
                         <li><a href="stool.html">Stool</a></li>
                         <li><a href="syn.html">Syn</a></li>
-                        <li><a href="designing-with-other-intelligences.html" class="active">Designing with Other Intelligences</a></li> <!-- Active class added -->
+                        <li><a href="designing-with-other-intelligences.html" class="active">Designing with Other Intelligences</a></li> <!-- Active class for this page -->
                     </ul>
                 </li>
                 <li><a href="about.html">About</a></li>
@@ -68,26 +66,27 @@
     </div>
 
     <!-- Main content area -->
-    <div class="content">
+    <div class="container">
         <section>
             <!-- First image -->
-            <img src="Assets/3Dpproject.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 186px; margin-bottom: 1px;">
+            <img src="Assets/3Dpproject.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 169px; margin-bottom: 1px;">
             
             <!-- Second image -->
-            <img src="Assets/Modelimagewithcode.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;">
+            <img src="Assets/Modelimagewithcode.png" alt="Teawi Project Image">
             
             <!-- Third image -->
-            <img src="Assets/ModelImage1.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;">
+            <img src="Assets/ModelImage1.png" alt="Teawi Project Image">
 
             <!-- Fourth image -->
-            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 50px; margin-bottom: 1px;">
+            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image">
 
             <!-- Fifth image -->
-            <img src="Assets/3dprintedb.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 0px; margin-bottom: 20px;">
+            <img src="Assets/3dprintedb.jpg" alt="Teawi Project Image">
 
             <!-- Sixth image -->
-            <img src="Assets/Asset3.png" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 100px; margin-bottom: 20px;"> 
+            <img src="Assets/Asset3.png" alt="Teawi Project Image"> 
         </section>
     </div>
+
 </body>
 </html>
