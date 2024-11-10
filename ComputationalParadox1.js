@@ -1,7 +1,8 @@
 const canvas = document.getElementById('paradoxCanvas');
 const context = canvas.getContext('2d');
 
-// Animation code here
+canvas.width = 841;
+canvas.height = 595;
 
 let numParticles = 100;
 let particles = [];
@@ -27,94 +28,98 @@ let polygons = [
   [[476.04, 335.33], [440.29, 351.51], [405.43, 335.48], [441.85, 318.64], [476.04, 335.33]]
 ];
 
+
 class Particle {
-  constructor(x, y, polygon) {
-    this.x = x;
-    this.y = y;
-    this.vx = random(-0.5, 0.5);
-    this.vy = random(-0.5, 0.5);
-    this.polygon = polygon;
-  }
-
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-
-    if (!isPointInPolygon(this.x, this.y, this.polygon)) {
-      this.vx *= -1;
-      this.vy *= -1;
+    constructor(x, y, polygon) {
+      this.x = x;
+      this.y = y;
+      this.vx = Math.random() * 0.05 - 0.025;
+      this.vy = Math.random() * 0.05 - 0.025;
+      this.polygon = polygon;
+    }
+  
+    update() {
       this.x += this.vx;
       this.y += this.vy;
+  
+      if (!isPointInPolygon(this.x, this.y, this.polygon)) {
+        this.vx *= -1;
+        this.vy *= -1;
+        this.x += this.vx;
+        this.y += this.vy;
+      }
+    }
+  
+    display() {
+      context.beginPath();
+      context.arc(this.x, this.y, 0.6, 0, 2 * Math.PI);
+      context.fillStyle = 'rgb(0, 255, 0)';
+      context.fill();
     }
   }
-
-  display() {
-    noStroke();
-    fill(0, 255, 0);
-    ellipse(this.x, this.y, 1.2, 1.2);
+  
+  function createParticleInPolygon(polygon) {
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    for (let vert of polygon) {
+      minX = Math.min(minX, vert[0]);
+      minY = Math.min(minY, vert[1]);
+      maxX = Math.max(maxX, vert[0]);
+      maxY = Math.max(maxY, vert[1]);
+    }
+  
+    let x = Math.random() * (maxX - minX) + minX;
+    let y = Math.random() * (maxY - minY) + minY;
+  
+    if (isPointInPolygon(x, y, polygon)) {
+      return new Particle(x, y, polygon);
+    }
+    return null;
   }
-}
-
-function setup() {
-  createCanvas(841, 595);
+  
+  function draw() {
+    context.fillStyle = 'black';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+  
+    let offsetY = Math.sin(Date.now() * 0.005) * 2;
+  
+    for (let i = 0; i < polygons.length; i++) {
+      context.strokeStyle = 'rgba(0, 255, 0, 1)';
+      context.fillStyle = 'rgba(black)';
+      context.beginPath();
+      for (let vert of polygons[i]) {
+        let animatedY = vert[1] + (i % 2 === 0 ? offsetY : -offsetY);
+        context.lineTo(vert[0], animatedY);
+      }
+      context.closePath();
+      context.fill();
+      context.stroke();
+    }
+  
+    particles.forEach(p => {
+      p.update();
+      p.display();
+    });
+  
+    requestAnimationFrame(draw);
+  }
+  
   for (let polygon of polygons) {
     for (let i = 0; i < numParticles; i++) {
       let p = createParticleInPolygon(polygon);
-      if (p) {
-        particles.push(p);
-      }
+      if (p) particles.push(p);
     }
   }
-}
-
-function draw() {
-  background(0);
-
-  let offsetY = sin(frameCount * 0.05) * 2;
-
-  for (let i = 0; i < polygons.length; i++) {
-    stroke(0, 255, 0);
-    fill(0, 50);
-    beginShape();
-    for (let vert of polygons[i]) {
-      let animatedY = vert[1] + (i % 2 === 0 ? offsetY : -offsetY);
-      vertex(vert[0], animatedY);
+  
+  draw();
+  
+  function isPointInPolygon(x, y, polygon) {
+    let inside = false;
+    for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+      let xi = polygon[i][0], yi = polygon[i][1];
+      let xj = polygon[j][0], yj = polygon[j][1];
+  
+      let intersect = ((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+      if (intersect) inside = !inside;
     }
-    endShape(CLOSE);
+    return inside;
   }
-
-  for (let p of particles) {
-    p.update();
-    p.display();
-  }
-}
-
-function createParticleInPolygon(polygon) {
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  for (let vert of polygon) {
-    minX = min(minX, vert[0]);
-    minY = min(minY, vert[1]);
-    maxX = max(maxX, vert[0]);
-    maxY = max(maxY, vert[1]);
-  }
-
-  let x = random(minX, maxX);
-  let y = random(minY, maxY);
-
-  if (isPointInPolygon(x, y, polygon)) {
-    return new Particle(x, y, polygon);
-  }
-  return null;
-}
-
-function isPointInPolygon(x, y, polygon) {
-  let inside = false;
-  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
-    let xi = polygon[i][0], yi = polygon[i][1];
-    let xj = polygon[j][0], yj = polygon[j][1];
-
-    let intersect = ((yi > y) != (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
-    if (intersect) inside = !inside;
-  }
-  return inside;
-}
