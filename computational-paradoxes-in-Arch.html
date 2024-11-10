@@ -3,53 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stool - Portfolio</title>
+    <title>computational-paradoxes-in-Arch - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            display: flex;
-        }
-    
-        .sidebar {
-            width: 250px;
-            padding: 20px;
-        }
-    
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
-    
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    
-        nav li {
-            margin-bottom: 10px;
-        }
-    
-        nav ul li a.active {
-            font-weight: bold;
-        }
-    
-        /* Change text size in the section */
-        section {
-            font-size: 12px; /* Set the desired text size */
-            line-height: 1.6; /* Adjust line height for better readability */
-            margin-top: 227px; /* Add space above the text */
-            margin-right: 227px;
-            margin-bottom: 225px; /* Add space above the text */
-            text-align: justify; /* Justify the text */
-        }
+     body {
+    display: flex;
+    justify-content: space-between; /* Aligns sidebar and content */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh;
+    text-align: center;
+}
+
+#paradoxCanvas {
+    max-width: 90%; /* Make the canvas responsive */
+    height: auto;
+    margin-top: 20px; /* Adjust space above the canvas */
+    margin-bottom: 40px; /* Add space below the canvas */
+}
+
+section {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 700px; /* Space between canvas and text */
+    margin-bottom: 20px; /* Space below the text */
+    margin-left: 20px; /* Space below the text */
+    text-align: justify;
+    max-width: 800px; /* Limit the width of the text */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+
+
     </style>
-    
 </head>
-<body class="stool-page"> <!-- Unique class for styling -->
-    <!-- Sidebar -->
+<body class="computational-paradoxes-in-Arch">
     <div class="sidebar">
         <h1>CPA</h1>
-        <p class="name">Flora </p>
+        <p class="name">Flora</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -67,35 +84,28 @@
                         <li><a href="stool.html">Stool</a></li>
                         <li><a href="syn.html">Syn</a></li>
                         <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
-                        
                     </ul>
                 </li>
-                <li>
-                    
-                </li>
-                
             </ul>
         </nav>
     </div>
 
-    <!-- Main content area -->
     <div class="content">
-        
+        <!-- Canvas for animation -->
+        <canvas id="paradoxCanvas"></canvas>
 
-        <!-- First image -->
-        <img src="Assets/photofinalePullStool.jpg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 200px; margin-bottom: 20px;">
         <section>
-            <!-- Add any additional text or descriptions here -->
             The project investigates the use of computational methods in architecture, focusing on how these technologies can expand and transform traditional design practices. By employing algorithms, the project generates dynamic and interactive designs that reinterpret classical architectural paradoxes, including the Penrose staircase, anamorphosis, and the Da Vinci staircase. These historical forms serve as a foundation for exploring how digital technologies can challenge conventional notions of space and geometry. The emphasis is not only on creating 3D models or animations but on uncovering the computational processes that drive these digital designs, often concealed within user-friendly software interfaces.
 
             Through computational tools like particle systems and polygonal shapes, the project delves into the mathematical and geometric properties of these forms, creating constantly evolving structures that reflect deeper architectural principles. The study offers a critical understanding of the methodologies and technologies used, questioning how these tools can reveal new insights into both historical forms and future architectural practices. By exploring these computational processes, the project challenges the viewer to rethink the role of technology in shaping architectural identities in the modern era.
         </section>
 
-        <!-- Second image -->
         <img src="Assets/detail1.jpeg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
-
-        <!-- Third image -->
         <img src="Assets/stool1.jpg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
     </div>
+
+    <!-- Add the p5.js library and your sketch file here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="ComputationalParadox1.js"></script>
 </body>
 </html>
