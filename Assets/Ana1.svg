@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.9 595.3">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke-width: .3px;
+      }
+
+      .st0, .st1 {
+        stroke: #231f20;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st1, .st2 {
+        stroke-width: .3px;
+      }
+
+      .st2, .st3 {
+        stroke: #000;
+      }
+
+      .st3 {
+        stroke-width: .2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <g id="Layer_11" data-name="Layer_1">
+      <g>
+        <g id="LINE-52">
+          <line class="st2" x1="330.6" y1="284.8" x2="306.3" y2="289.4"/>
+        </g>
+        <g id="LINE-152">
+          <line class="st2" x1="458.2" y1="365.8" x2="458.3" y2="365.7"/>
+        </g>
+        <g id="LINE-207">
+          <line class="st2" x1="394.5" y1="371.3" x2="394.4" y2="371.3"/>
+        </g>
+        <g id="LINE-218">
+          <line class="st2" x1="522.1" y1="301.3" x2="522.1" y2="251.7"/>
+        </g>
+        <g id="LINE-219">
+          <line class="st2" x1="497.9" y1="256.3" x2="522.1" y2="251.7"/>
+        </g>
+        <g id="LINE-220">
+          <line class="st2" x1="522.1" y1="251.7" x2="491" y2="249.5"/>
+        </g>
+        <g id="LINE-221">
+          <line class="st2" x1="403.2" y1="174.1" x2="427.5" y2="169.5"/>
+        </g>
+        <g id="LINE-222">
+          <line class="st2" x1="363.6" y1="171.3" x2="403.2" y2="174.1"/>
+        </g>
+        <g id="LINE-223">
+          <line class="st2" x1="427.5" y1="169.5" x2="387.9" y2="166.7"/>
+        </g>
+        <g id="LINE-224">
+          <line class="st2" x1="387.9" y1="166.7" x2="363.6" y2="171.3"/>
+        </g>
+        <g id="LINE-225">
+          <line class="st2" x1="427.5" y1="175.8" x2="427.5" y2="169.5"/>
+        </g>
+        <g id="LINE-226">
+          <line class="st2" x1="363.6" y1="223.1" x2="363.6" y2="171.3"/>
+        </g>
+        <g id="LINE-227">
+          <line class="st2" x1="306.3" y1="225.9" x2="330.6" y2="221.4"/>
+        </g>
+        <g id="LINE-228">
+          <line class="st2" x1="306.3" y1="247.9" x2="306.3" y2="225.9"/>
+        </g>
+        <g id="LINE-229">
+          <line class="st2" x1="227.1" y1="220.3" x2="306.3" y2="225.9"/>
+        </g>
+        <g id="LINE-230">
+          <line class="st2" x1="251.3" y1="215.7" x2="227.1" y2="220.3"/>
+        </g>
+        <g id="LINE-231">
+          <line class="st2" x1="290.9" y1="218.5" x2="251.3" y2="215.7"/>
+        </g>
+        <g id="LINE-232">
+          <line class="st2" x1="246.7" y1="243.6" x2="266.7" y2="245"/>
+        </g>
+        <g id="LINE-233">
+          <line class="st2" x1="497.9" y1="256.3" x2="489.7" y2="255.8"/>
+        </g>
+        <g id="LINE-234">
+          <line class="st2" x1="497.9" y1="274.7" x2="497.9" y2="256.3"/>
+        </g>
+        <g id="LINE-235">
+          <line class="st2" x1="490.7" y1="257.6" x2="497.9" y2="256.3"/>
+        </g>
+        <g id="LINE-236">
+          <line class="st2" x1="315.2" y1="194.3" x2="275.5" y2="191.5"/>
+        </g>
+        <g id="LINE-237">
+          <line class="st2" x1="275.5" y1="191.5" x2="251.3" y2="196.1"/>
+        </g>
+        <g id="LINE-238">
+          <line class="st2" x1="251.3" y1="196.1" x2="290.9" y2="198.9"/>
+        </g>
+        <g id="LINE-239">
+          <line class="st2" x1="290.9" y1="198.9" x2="315.2" y2="194.3"/>
+        </g>
+        <g id="LINE-240">
+          <line class="st2" x1="315.2" y1="220.3" x2="315.2" y2="194.3"/>
+        </g>
+        <g id="LINE-241">
+          <line class="st2" x1="290.9" y1="218.5" x2="290.9" y2="198.9"/>
+        </g>
+        <g id="LINE-242">
+          <line class="st2" x1="251.3" y1="215.7" x2="251.3" y2="196.1"/>
+        </g>
+        <g id="LINE-243">
+          <line class="st2" x1="227.1" y1="237" x2="207.1" y2="240.8"/>
+        </g>
+        <g id="LINE-244">
+          <line class="st2" x1="246.7" y1="370.5" x2="246.7" y2="243.6"/>
+        </g>
+        <g id="LINE-245">
+          <line class="st2" x1="207.1" y1="240.8" x2="227.1" y2="242.2"/>
+        </g>
+        <g id="LINE-246">
+          <line class="st2" x1="227.1" y1="242.2" x2="246.7" y2="243.6"/>
+        </g>
+        <g id="LINE-247">
+          <line class="st2" x1="403.2" y1="174.1" x2="379" y2="178.7"/>
+        </g>
+        <g id="LINE-248">
+          <line class="st2" x1="379" y1="178.7" x2="418.6" y2="181.5"/>
+        </g>
+        <g id="LINE-249">
+          <line class="st2" x1="418.6" y1="181.5" x2="442.9" y2="176.9"/>
+        </g>
+        <g id="LINE-250">
+          <line class="st2" x1="442.9" y1="218.9" x2="442.9" y2="200.4"/>
+        </g>
+        <g id="LINE-251">
+          <line class="st2" x1="418.6" y1="213.1" x2="418.6" y2="181.5"/>
+        </g>
+        <g id="LINE-254">
+          <line class="st2" x1="586" y1="236.1" x2="506.7" y2="230.5"/>
+        </g>
+        <g id="LINE-255">
+          <line class="st2" x1="586" y1="299.5" x2="586" y2="236.1"/>
+        </g>
+        <g id="LINE-256">
+          <line class="st2" x1="506.7" y1="230.5" x2="482.5" y2="235.1"/>
+        </g>
+        <g id="LINE-257">
+          <line class="st2" x1="561.7" y1="304.1" x2="561.7" y2="240.7"/>
+        </g>
+        <g id="LINE-258">
+          <line class="st2" x1="482.5" y1="235.1" x2="561.7" y2="240.7"/>
+        </g>
+        <g id="LINE-259">
+          <line class="st2" x1="561.7" y1="240.7" x2="586" y2="236.1"/>
+        </g>
+        <g id="LINE-260">
+          <line class="st2" x1="354.8" y1="228.3" x2="330.6" y2="232.9"/>
+        </g>
+        <g id="LINE-261">
+          <line class="st2" x1="266.7" y1="245" x2="306.3" y2="247.9"/>
+        </g>
+        <g id="LINE-262">
+          <line class="st2" x1="306.3" y1="247.9" x2="330.6" y2="243.3"/>
+        </g>
+        <g id="LINE-263">
+          <line class="st2" x1="306.3" y1="289.4" x2="306.3" y2="247.9"/>
+        </g>
+        <g id="LINE-264">
+          <line class="st2" x1="330.6" y1="243.3" x2="354.8" y2="238.7"/>
+        </g>
+        <g id="LINE-265">
+          <line class="st2" x1="482.5" y1="203.3" x2="506.7" y2="198.7"/>
+        </g>
+        <g id="LINE-266">
+          <line class="st2" x1="506.7" y1="198.7" x2="442.9" y2="194.1"/>
+        </g>
+        <g id="LINE-267">
+          <line class="st2" x1="506.7" y1="230.5" x2="506.7" y2="198.7"/>
+        </g>
+        <g id="LINE-268">
+          <line class="st2" x1="482.5" y1="245.3" x2="482.5" y2="235.1"/>
+        </g>
+        <g id="LINE-269">
+          <line class="st2" x1="442.9" y1="219" x2="482.5" y2="221.9"/>
+        </g>
+        <g id="LINE-270">
+          <line class="st2" x1="482.5" y1="235.1" x2="482.5" y2="221.3"/>
+        </g>
+        <g id="LINE-271">
+          <line class="st2" x1="482.5" y1="221.3" x2="482.5" y2="203.3"/>
+        </g>
+        <g id="LINE-272">
+          <line class="st2" x1="306.3" y1="289.4" x2="341.2" y2="291.9"/>
+        </g>
+        <g id="LINE-273">
+          <line class="st2" x1="342.6" y1="285.6" x2="330.6" y2="284.8"/>
+        </g>
+        <g id="LINE-274">
+          <path class="st2" d="M330.6,243.3l27.9,1.9"/>
+        </g>
+        <g id="LINE-275">
+          <line class="st2" x1="365.1" y1="239.4" x2="354.8" y2="238.7"/>
+        </g>
+        <g id="LINE-276">
+          <line class="st2" x1="330.6" y1="284.8" x2="330.6" y2="243.3"/>
+        </g>
+        <g id="LINE-277">
+          <line class="st2" x1="354.8" y1="224.8" x2="383" y2="226.8"/>
+        </g>
+        <g id="LINE-278">
+          <line class="st2" x1="384.4" y1="220.6" x2="379" y2="220.2"/>
+        </g>
+        <g id="LINE-279">
+          <line class="st2" x1="251.3" y1="406" x2="290.9" y2="408.8"/>
+        </g>
+        <g id="LINE-280">
+          <line class="st2" x1="290.9" y1="408.8" x2="315.2" y2="404.2"/>
+        </g>
+        <g id="LINE-281">
+          <line class="st2" x1="315.2" y1="395" x2="315.2" y2="404.2"/>
+        </g>
+        <g id="LINE-282">
+          <line class="st2" x1="251.3" y1="392.7" x2="251.3" y2="406"/>
+        </g>
+        <g id="LINE-283">
+          <line class="st2" x1="290.9" y1="395.5" x2="290.9" y2="408.8"/>
+        </g>
+        <g id="LINE-284">
+          <line class="st2" x1="522.1" y1="301.3" x2="522.1" y2="350.9"/>
+        </g>
+        <g id="LINE-285">
+          <line class="st2" x1="497.9" y1="355.5" x2="522.1" y2="350.9"/>
+        </g>
+        <g id="LINE-286">
+          <line class="st2" x1="501.1" y1="305.3" x2="522.1" y2="301.3"/>
+        </g>
+        <g id="LINE-288">
+          <line class="st2" x1="370.2" y1="372.9" x2="387" y2="369.7"/>
+        </g>
+        <g id="LINE-289">
+          <line class="st2" x1="330.6" y1="334.9" x2="330.6" y2="370.1"/>
+        </g>
+        <g id="LINE-290">
+          <line class="st2" x1="370.2" y1="362.7" x2="370.2" y2="372.9"/>
+        </g>
+        <g id="LINE-291">
+          <line class="st2" x1="363.6" y1="408.9" x2="379" y2="410"/>
+        </g>
+        <g id="LINE-292">
+          <line class="st2" x1="363.6" y1="380" x2="363.6" y2="408.9"/>
+        </g>
+        <g id="LINE-293">
+          <line class="st2" x1="458.3" y1="380.4" x2="482.5" y2="375.8"/>
+        </g>
+        <g id="LINE-294">
+          <line class="st2" x1="458.3" y1="366.5" x2="458.3" y2="380.4"/>
+        </g>
+        <g id="LINE-295">
+          <line class="st2" x1="458.3" y1="365.7" x2="458.3" y2="366.5"/>
+        </g>
+        <g id="LINE-296">
+          <line class="st2" x1="330.6" y1="370.1" x2="330.6" y2="392"/>
+        </g>
+        <g id="LINE-297">
+          <line class="st2" x1="227.1" y1="369.1" x2="227.1" y2="391"/>
+        </g>
+        <g id="LINE-298">
+          <line class="st2" x1="306.3" y1="374.7" x2="306.3" y2="396.6"/>
+        </g>
+        <g id="LINE-300">
+          <line class="st2" x1="207.1" y1="367.7" x2="227.1" y2="369.1"/>
+        </g>
+        <g id="LINE-301">
+          <line class="st2" x1="246.7" y1="370.5" x2="266.7" y2="366.7"/>
+        </g>
+        <g id="LINE-302">
+          <line class="st2" x1="227.1" y1="369.1" x2="246.7" y2="370.5"/>
+        </g>
+        <g id="LINE-303">
+          <line class="st2" x1="473.6" y1="360.1" x2="475.4" y2="359.8"/>
+        </g>
+        <g id="LINE-304">
+          <line class="st2" x1="497.9" y1="321" x2="497.9" y2="355.5"/>
+        </g>
+        <g id="LINE-306">
+          <line class="st2" x1="266.7" y1="371.9" x2="306.3" y2="374.7"/>
+        </g>
+        <g id="LINE-307">
+          <line class="st2" x1="306.3" y1="374.7" x2="330.6" y2="370.1"/>
+        </g>
+        <g id="LINE-308">
+          <line class="st2" x1="306.3" y1="333.2" x2="306.3" y2="374.7"/>
+        </g>
+        <g id="LINE-309">
+          <line class="st2" x1="394.4" y1="382.2" x2="418.6" y2="377.6"/>
+        </g>
+        <g id="LINE-310">
+          <line class="st2" x1="354.8" y1="371.8" x2="354.8" y2="379.4"/>
+        </g>
+        <g id="LINE-311">
+          <line class="st2" x1="394.4" y1="371.3" x2="394.4" y2="382.2"/>
+        </g>
+        <g id="LINE-312">
+          <line class="st2" x1="418.6" y1="419.1" x2="442.9" y2="414.5"/>
+        </g>
+        <g id="LINE-313">
+          <line class="st2" x1="379" y1="416.3" x2="418.6" y2="419.1"/>
+        </g>
+        <g id="LINE-314">
+          <line class="st2" x1="418.6" y1="377.6" x2="418.6" y2="419.1"/>
+        </g>
+        <g id="LINE-315">
+          <line class="st2" x1="418.6" y1="371.4" x2="418.6" y2="377.6"/>
+        </g>
+        <g id="LINE-316">
+          <line class="st2" x1="442.9" y1="379.3" x2="442.9" y2="391"/>
+        </g>
+        <g id="LINE-317">
+          <line class="st2" x1="442.9" y1="391" x2="442.9" y2="414.5"/>
+        </g>
+        <g id="LINE-318">
+          <line class="st2" x1="482.5" y1="393.8" x2="506.7" y2="389.2"/>
+        </g>
+        <g id="LINE-319">
+          <line class="st2" x1="506.7" y1="363.7" x2="506.7" y2="389.2"/>
+        </g>
+        <g id="LINE-320">
+          <line class="st2" x1="442.9" y1="391" x2="482.5" y2="393.8"/>
+        </g>
+        <g id="LINE-321">
+          <line class="st2" x1="482.5" y1="375.8" x2="482.5" y2="393.8"/>
+        </g>
+        <g id="LINE-322">
+          <line class="st2" x1="482.5" y1="362" x2="482.5" y2="375.8"/>
+        </g>
+        <g id="LINE-323">
+          <line class="st2" x1="561.7" y1="367.6" x2="586" y2="363"/>
+        </g>
+        <g id="LINE-324">
+          <line class="st2" x1="561.7" y1="304.1" x2="586" y2="299.5"/>
+        </g>
+        <g id="LINE-325">
+          <line class="st2" x1="561.7" y1="304.1" x2="561.7" y2="367.6"/>
+        </g>
+        <g id="LINE-326">
+          <line class="st2" x1="586" y1="299.5" x2="586" y2="363"/>
+        </g>
+        <g id="LINE-327">
+          <line class="st2" x1="482.5" y1="358.4" x2="482.5" y2="362"/>
+        </g>
+        <g id="LINE-328">
+          <line class="st2" x1="522.1" y1="301.3" x2="561.7" y2="304.1"/>
+        </g>
+        <g id="LINE-329">
+          <line class="st2" x1="330.6" y1="243.3" x2="330.6" y2="232.9"/>
+        </g>
+        <g id="LINE-330">
+          <line class="st2" x1="330.6" y1="232.9" x2="330.6" y2="221.4"/>
+        </g>
+        <g id="LINE-331">
+          <line class="st2" x1="330.6" y1="221.4" x2="315.2" y2="220.3"/>
+        </g>
+        <g id="LINE-332">
+          <line class="st2" x1="315.2" y1="220.3" x2="290.9" y2="218.5"/>
+        </g>
+        <g id="LINE-333">
+          <line class="st2" x1="227.1" y1="242.2" x2="227.1" y2="237"/>
+        </g>
+        <g id="LINE-334">
+          <line class="st2" x1="227.1" y1="237" x2="227.1" y2="220.3"/>
+        </g>
+        <g id="LINE-335">
+          <line class="st2" x1="442.9" y1="176.9" x2="427.5" y2="175.8"/>
+        </g>
+        <g id="LINE-336">
+          <line class="st2" x1="427.5" y1="175.8" x2="403.2" y2="174.1"/>
+        </g>
+        <g id="LINE-337">
+          <line class="st2" x1="379" y1="220.2" x2="379" y2="218.2"/>
+        </g>
+        <g id="LINE-338">
+          <line class="st2" x1="379" y1="218.2" x2="379" y2="178.7"/>
+        </g>
+        <g id="LINE-339">
+          <line class="st2" x1="442.9" y1="200.4" x2="442.9" y2="194.1"/>
+        </g>
+        <g id="LINE-340">
+          <line class="st2" x1="442.9" y1="194.1" x2="442.9" y2="176.9"/>
+        </g>
+        <g id="LINE-341">
+          <line class="st2" x1="379" y1="220.2" x2="374.9" y2="221"/>
+        </g>
+        <g id="LINE-342">
+          <line class="st2" x1="354.8" y1="238.7" x2="354.8" y2="228.3"/>
+        </g>
+        <g id="LINE-343">
+          <line class="st2" x1="354.8" y1="228.3" x2="354.8" y2="224.8"/>
+        </g>
+        <g id="LINE-345">
+          <line class="st2" x1="330.6" y1="370.1" x2="354.8" y2="371.8"/>
+        </g>
+        <g id="LINE-346">
+          <line class="st2" x1="354.8" y1="371.8" x2="370.2" y2="372.9"/>
+        </g>
+        <g id="LINE-347">
+          <line class="st2" x1="387" y1="369.7" x2="390" y2="369.2"/>
+        </g>
+        <g id="LINE-348">
+          <line class="st2" x1="418.6" y1="377.6" x2="442.9" y2="379.3"/>
+        </g>
+        <g id="LINE-349">
+          <line class="st2" x1="442.9" y1="379.3" x2="458.3" y2="380.4"/>
+        </g>
+        <g id="LINE-350">
+          <line class="st2" x1="227.1" y1="391" x2="251.3" y2="392.7"/>
+        </g>
+        <g id="LINE-351">
+          <line class="st2" x1="306.3" y1="396.6" x2="315.2" y2="395"/>
+        </g>
+        <g id="LINE-352">
+          <line class="st2" x1="315.2" y1="395" x2="330.6" y2="392"/>
+        </g>
+        <g id="LINE-353">
+          <line class="st3" x1="468.1" y1="359.7" x2="473.6" y2="360.1"/>
+        </g>
+        <g id="LINE-354">
+          <line class="st2" x1="475.4" y1="359.8" x2="482.5" y2="358.4"/>
+        </g>
+        <g id="LINE-355">
+          <line class="st2" x1="482.5" y1="358.4" x2="497.9" y2="355.5"/>
+        </g>
+        <g id="LINE-356">
+          <line class="st2" x1="266.7" y1="366.7" x2="266.7" y2="371.9"/>
+        </g>
+        <g id="LINE-357">
+          <line class="st2" x1="354.8" y1="379.4" x2="363.6" y2="380"/>
+        </g>
+        <g id="LINE-358">
+          <line class="st2" x1="379" y1="381.1" x2="379" y2="410"/>
+        </g>
+        <g id="LINE-359">
+          <line class="st2" x1="379" y1="410" x2="379" y2="416.3"/>
+        </g>
+        <g id="LINE-360">
+          <line class="st2" x1="306.3" y1="333.2" x2="330.6" y2="334.9"/>
+        </g>
+        <g id="LINE-361">
+          <line class="st2" x1="330.6" y1="334.9" x2="345.9" y2="336"/>
+        </g>
+        <g id="LINE-362">
+          <line class="st2" x1="482.5" y1="362" x2="506.7" y2="363.7"/>
+        </g>
+        <g id="LINE-363">
+          <line class="st2" x1="506.7" y1="363.7" x2="561.7" y2="367.6"/>
+        </g>
+        <g id="LINE-364">
+          <line class="st2" x1="374.9" y1="221" x2="363.6" y2="223.1"/>
+        </g>
+        <g id="LINE-365">
+          <line class="st2" x1="363.6" y1="223.1" x2="354.8" y2="224.8"/>
+        </g>
+        <g id="LINE-366">
+          <line class="st2" x1="251.3" y1="392.7" x2="290.9" y2="395.5"/>
+        </g>
+        <g id="LINE-367">
+          <line class="st2" x1="290.9" y1="395.5" x2="306.3" y2="396.6"/>
+        </g>
+        <g id="LINE-368">
+          <line class="st2" x1="363.6" y1="380" x2="379" y2="381.1"/>
+        </g>
+        <g id="LINE-369">
+          <line class="st2" x1="379" y1="381.1" x2="394.4" y2="382.2"/>
+        </g>
+        <g id="LINE-372">
+          <line class="st2" x1="207.1" y1="240.8" x2="207.1" y2="367.7"/>
+        </g>
+        <g id="LINE-373">
+          <line class="st2" x1="266.7" y1="245" x2="266.7" y2="366.7"/>
+        </g>
+        <g id="LINE-374">
+          <line class="st2" x1="306.3" y1="289.4" x2="306.3" y2="333.2"/>
+        </g>
+        <g id="LINE-2691" data-name="LINE-269">
+          <line class="st2" x1="442.9" y1="200.4" x2="482.5" y2="203.3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_2">
+    <circle class="st1" cx="420.6" cy="295.9" r="79.8"/>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <g id="LINE-2241" data-name="LINE-224">
+        <line class="st0" x1="458.2" y1="254" x2="433.9" y2="258.6"/>
+      </g>
+      <g id="LINE-2251" data-name="LINE-225">
+        <line class="st0" x1="394.3" y1="269.6" x2="370.1" y2="274.3"/>
+      </g>
+      <g id="LINE-2261" data-name="LINE-226">
+        <line class="st0" x1="482.4" y1="249.4" x2="458.2" y2="254"/>
+      </g>
+      <g id="LINE-2281" data-name="LINE-228">
+        <line class="st0" x1="449.3" y1="279.9" x2="473.6" y2="275.3"/>
+      </g>
+      <g id="LINE-2291" data-name="LINE-229">
+        <line class="st0" x1="449.3" y1="351.4" x2="449.3" y2="279.9"/>
+      </g>
+      <g id="LINE-2301" data-name="LINE-230">
+        <line class="st0" x1="370.1" y1="274.3" x2="449.3" y2="279.9"/>
+      </g>
+      <g id="LINE-2311" data-name="LINE-231">
+        <line class="st0" x1="473.6" y1="275.3" x2="433.9" y2="272.5"/>
+      </g>
+      <g id="LINE-2321" data-name="LINE-232">
+        <line class="st0" x1="433.9" y1="272.5" x2="394.3" y2="269.6"/>
+      </g>
+      <g id="LINE-2331" data-name="LINE-233">
+        <line class="st0" x1="433.9" y1="258.6" x2="473.6" y2="261.4"/>
+      </g>
+      <g id="LINE-2341" data-name="LINE-234">
+        <path class="st0" d="M473.6,261.4l14.9-2.8"/>
+      </g>
+      <g id="LINE-2351" data-name="LINE-235">
+        <path class="st0" d="M487.3,256.1c-9.7-.7-19.4-1.4-29.2-2.1"/>
+      </g>
+      <g id="LINE-2361" data-name="LINE-236">
+        <polyline class="st0" points="473.6 346.8 473.6 275.3 473.6 261.4"/>
+      </g>
+      <g id="LINE-2371" data-name="LINE-237">
+        <line class="st0" x1="458.2" y1="240.2" x2="418.5" y2="237.4"/>
+      </g>
+      <g id="LINE-2381" data-name="LINE-238">
+        <line class="st0" x1="418.5" y1="237.4" x2="394.3" y2="242"/>
+      </g>
+      <g id="LINE-2391" data-name="LINE-239">
+        <line class="st0" x1="394.3" y1="242" x2="433.9" y2="244.8"/>
+      </g>
+      <g id="LINE-2401" data-name="LINE-240">
+        <line class="st0" x1="433.9" y1="244.8" x2="458.2" y2="240.2"/>
+      </g>
+      <g id="LINE-2411" data-name="LINE-241">
+        <line class="st0" x1="433.9" y1="258.6" x2="433.9" y2="244.8"/>
+      </g>
+      <g id="LINE-2421" data-name="LINE-242">
+        <line class="st0" x1="433.9" y1="272.5" x2="433.9" y2="258.6"/>
+      </g>
+      <g id="LINE-2441" data-name="LINE-244">
+        <path class="st0" d="M418.5,223.5v-5.5"/>
+      </g>
+      <g id="LINE-2451" data-name="LINE-245">
+        <path class="st0" d="M418.5,223.5c12,1.8,25,1.8,37,2.6"/>
+      </g>
+      <g id="LINE-2461" data-name="LINE-246">
+        <path class="st0" d="M440.1,219.5c-7.2,1.4-14.4,2.7-21.5,4.1"/>
+      </g>
+      <g id="LINE-2481" data-name="LINE-248">
+        <line class="st0" x1="458.2" y1="254" x2="458.2" y2="240.2"/>
+      </g>
+      <g id="LINE-2501" data-name="LINE-250">
+        <path class="st0" d="M458.2,240.2v-12.2"/>
+      </g>
+      <g id="LINE-252">
+        <line class="st0" x1="385.5" y1="339.3" x2="385.5" y2="295.5"/>
+      </g>
+      <g id="LINE-253">
+        <line class="st0" x1="385.5" y1="295.5" x2="409.7" y2="290.9"/>
+      </g>
+      <g id="LINE-2541" data-name="LINE-254">
+        <line class="st0" x1="341.2" y1="292.4" x2="385.5" y2="295.5"/>
+      </g>
+      <g id="LINE-2551" data-name="LINE-255">
+        <line class="st0" x1="409.7" y1="290.9" x2="370.1" y2="288.1"/>
+      </g>
+      <g id="LINE-2561" data-name="LINE-256">
+        <line class="st0" x1="370.1" y1="288.1" x2="342.5" y2="286.1"/>
+      </g>
+      <g id="LINE-2571" data-name="LINE-257">
+        <line class="st0" x1="394.3" y1="242" x2="365" y2="239.9"/>
+      </g>
+      <g id="LINE-2581" data-name="LINE-258">
+        <line class="st0" x1="370.1" y1="246.6" x2="394.3" y2="242"/>
+      </g>
+      <g id="LINE-2591" data-name="LINE-259">
+        <line class="st0" x1="370.1" y1="288.1" x2="370.1" y2="274.3"/>
+      </g>
+      <g id="LINE-2601" data-name="LINE-260">
+        <line class="st0" x1="363.7" y1="246.1" x2="370.1" y2="246.6"/>
+      </g>
+      <g id="LINE-2611" data-name="LINE-261">
+        <line class="st0" x1="370.1" y1="274.3" x2="370.1" y2="246.6"/>
+      </g>
+      <g id="LINE-2621" data-name="LINE-262">
+        <path class="st0" d="M418.5,223.5c-8.8-.6-17.6-1.2-26.4-1.9"/>
+      </g>
+      <g id="LINE-2631" data-name="LINE-263">
+        <line class="st0" x1="394.3" y1="228.1" x2="418.5" y2="223.5"/>
+      </g>
+      <g id="LINE-2641" data-name="LINE-264">
+        <line class="st0" x1="418.5" y1="237.4" x2="418.5" y2="223.5"/>
+      </g>
+      <g id="LINE-2651" data-name="LINE-265">
+        <line class="st0" x1="394.3" y1="269.6" x2="394.3" y2="242"/>
+      </g>
+      <g id="LINE-2661" data-name="LINE-266">
+        <line class="st0" x1="382.9" y1="227.3" x2="394.3" y2="228.1"/>
+      </g>
+      <g id="LINE-2671" data-name="LINE-267">
+        <line class="st0" x1="394.3" y1="242" x2="394.3" y2="228.1"/>
+      </g>
+      <g id="LINE-2681" data-name="LINE-268">
+        <line class="st0" x1="433.9" y1="357.8" x2="433.9" y2="371.6"/>
+      </g>
+      <g id="LINE-2692" data-name="LINE-269">
+        <path class="st0" d="M370.1,345.8v11"/>
+      </g>
+      <g id="LINE-2701" data-name="LINE-270">
+        <line class="st0" x1="458.2" y1="359.5" x2="458.2" y2="366.2"/>
+      </g>
+      <g id="LINE-2711" data-name="LINE-271">
+        <line class="st0" x1="370.1" y1="338.2" x2="370.1" y2="345.8"/>
+      </g>
+      <g id="LINE-2721" data-name="LINE-272">
+        <line class="st0" x1="433.9" y1="350.3" x2="433.9" y2="357.8"/>
+      </g>
+      <g id="LINE-2731" data-name="LINE-273">
+        <line class="st0" x1="394.3" y1="368.8" x2="394.3" y2="371.8"/>
+      </g>
+      <g id="LINE-2741" data-name="LINE-274">
+        <line class="st0" x1="394.3" y1="347.5" x2="394.3" y2="368.8"/>
+      </g>
+      <g id="LINE-2751" data-name="LINE-275">
+        <line class="st0" x1="418.5" y1="370.5" x2="418.5" y2="375.7"/>
+      </g>
+      <g id="LINE-2761" data-name="LINE-276">
+        <line class="st0" x1="394.3" y1="368.8" x2="418.5" y2="370.5"/>
+      </g>
+      <g id="LINE-2771" data-name="LINE-277">
+        <line class="st0" x1="418.5" y1="370.5" x2="433.9" y2="371.6"/>
+      </g>
+      <g id="LINE-2781" data-name="LINE-278">
+        <line class="st0" x1="433.9" y1="371.6" x2="454.4" y2="367.8"/>
+      </g>
+      <g id="LINE-2791" data-name="LINE-279">
+        <line class="st0" x1="389.9" y1="369.7" x2="394.3" y2="368.8"/>
+      </g>
+      <g id="LINE-2801" data-name="LINE-280">
+        <line class="st0" x1="370.1" y1="345.8" x2="394.3" y2="347.5"/>
+      </g>
+      <g id="LINE-2811" data-name="LINE-281">
+        <line class="st0" x1="394.3" y1="347.5" x2="433.9" y2="350.3"/>
+      </g>
+      <g id="LINE-2821" data-name="LINE-282">
+        <line class="st0" x1="433.9" y1="357.8" x2="458.2" y2="359.5"/>
+      </g>
+      <g id="LINE-2831" data-name="LINE-283">
+        <line class="st0" x1="458.2" y1="359.5" x2="466.4" y2="360.1"/>
+      </g>
+      <g id="LINE-2841" data-name="LINE-284">
+        <path class="st0" d="M354.6,337.1c5.2.4,10.3.7,15.5,1.1"/>
+      </g>
+      <g id="LINE-2851" data-name="LINE-285">
+        <line class="st0" x1="370.1" y1="338.2" x2="385.5" y2="339.3"/>
+      </g>
+      <g id="LINE-2861" data-name="LINE-286">
+        <line class="st0" x1="409.7" y1="290.9" x2="409.7" y2="334.7"/>
+      </g>
+      <g id="LINE-287">
+        <line class="st0" x1="449.3" y1="351.4" x2="433.9" y2="350.3"/>
+      </g>
+      <g id="LINE-2881" data-name="LINE-288">
+        <line class="st0" x1="449.3" y1="351.4" x2="473.6" y2="346.8"/>
+      </g>
+      <g id="LINE-2891" data-name="LINE-289">
+        <line class="st0" x1="385.5" y1="339.3" x2="409.7" y2="334.7"/>
+      </g>
+      <g id="LINE-2342" data-name="LINE-234">
+        <path class="st0" d="M474,346.5l8.1-1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

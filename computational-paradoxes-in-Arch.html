@@ -8,66 +8,75 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-.sidebar {
-    width: 250px;
-    padding: 20px;
-    background-color: #ffffff;
-    height: 100vh;
-    box-sizing: border-box;
-}
+        .sidebar {
+            width: 250px;
+            padding: 20px;
+            background-color: #ffffff;
+            height: 100vh;
+            box-sizing: border-box;
+        }
 
-.content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stack the canvas and text */
-    justify-content: flex-start; /* Ensure it aligns from the top */
-    align-items: center;
-    height: auto; /* Allow content to expand based on the height of the canvas and text */
-    box-sizing: border-box;
-    text-align: center;
-}
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
 
-#paradoxCanvas {
-    width: 80%; /* Adjust the canvas size to 80% of the container */
-    max-width: 800px; /* Max width for responsiveness */
-    height: auto;
-    flex-grow: 1; /* Allow the canvas to take up as much space as possible */
-    margin-top: 235px; /* Add space above the canvas */
-    margin-bottom: 100px;
-}
+        #paradoxCanvas {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            flex-grow: 1;
+            margin-top: 120px;
+            margin-bottom: 100px;
+        }
 
-.description {
-    margin-top: 20px;
-    width: 80%;
-    max-width: 800px;
-    text-align: justify;
-    font-size: 12px;
-    line-height: 1.6;
-    color: #333;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px; /* Optional, just to give a little breathing room at the bottom */
-}
+        .description {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: justify;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #333;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;
+            margin-bottom: -150px;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-nav li {
-    margin-bottom: 10px;
-}
+        nav li {
+            margin-bottom: 10px;
+        }
 
-nav ul li a.active {
-    font-weight: bold;
-}
+        nav ul li a.active {
+            font-weight: bold;
+        }
 
+        /* Add a style for the video */
+        #anamorphoseVideo {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 235px;
+            margin-bottom: 100px;
+        }
     </style>
 </head>
 <body class="computational-paradoxes-in-Arch">
@@ -98,16 +107,19 @@ nav ul li a.active {
         </nav>
     </div>
 
-    <!-- Main content (Canvas for paradox animation in the center) -->
+    <!-- Main content -->
     <div class="content">
-        <canvas id="paradoxCanvas"></canvas>
+        <canvas id="paradoxCanvas"></canvas> <!-- For ComputationalParadox1.js -->
 
-        <!-- Text description under the animation -->
+        <!-- Text description between the first animation and the GIF -->
         <div class="description">
             <p>The project investigates the use of computational methods in architecture, focusing on how these technologies can expand and transform traditional design practices. By employing algorithms, the project generates dynamic and interactive designs that reinterpret classical architectural paradoxes, including the Penrose staircase, anamorphosis, and the Da Vinci staircase. These historical forms serve as a foundation for exploring how digital technologies can challenge conventional notions of space and geometry. The emphasis is not only on creating 3D models or animations but on uncovering the computational processes that drive these digital designs, often concealed within user-friendly software interfaces.</p>
 
             <p>Through computational tools like particle systems and polygonal shapes, the project delves into the mathematical and geometric properties of these forms, creating constantly evolving structures that reflect deeper architectural principles. The study offers a critical understanding of the methodologies and technologies used, questioning how these tools can reveal new insights into both historical forms and future architectural practices. By exploring these computational processes, the project challenges the viewer to rethink the role of technology in shaping architectural identities in the modern era.</p>
         </div>
+
+        <!-- GIF player for the anamorphose animation -->
+        <img id="anamorphoseVideo" src="Assets/Anamorphosevid.gif" alt="Anamorphose Animation" />
     </div>
 
     <!-- Add the p5.js library and your sketch file here -->
