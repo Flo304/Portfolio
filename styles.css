@@ -5,8 +5,7 @@ body {
     display: flex; 
     height: 100vh; 
     cursor: default;
-    }
-    
+}
 
 /* Sidebar styles */
 .sidebar {
@@ -85,4 +84,10 @@ h1 {
     width: 200px; /* Adjust as needed */
     height: 200px; /* Adjust as needed */
     /* Additional cube styles here */
+}
+
+/* Active link style */
+nav ul li a.active {
+    font-weight: bold; /* Make active link bold */
+    color: #333; /* Ensure it’s the same color as other links */
 }
