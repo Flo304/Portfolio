@@ -1,9 +1,9 @@
-let numParticles = 100; // Number of particles for each polygon
+let numParticles = 200; // Number of particles for each polygon
 let particles = []; // Array to store particles
 
 class Particle {
   constructor(x, y, polygon) {
-    this.x = x + 200; // Move particle x-coordinate by 200 pixels
+    this.x = x;
     this.y = y;
     this.vx = random(-1, 1); // Random velocity in X direction
     this.vy = random(-1, 1); // Random velocity in Y direction
@@ -27,20 +27,40 @@ class Particle {
   display() {
     noStroke();
     fill(255); // Particle color
-    ellipse(this.x, this.y, 1, 1); // Smaller particle size
+    ellipse(this.x, this.y, 1.5, 1.5); // Make particles slightly bigger
   }
 }
 
 function setup() {
-  createCanvas(841, 595); // Canvas size to match SVG
+  createCanvas(1682, 1190); // Double the canvas size
   background(0); // Clear background to black
   stroke(75, 0, 130); // Stroke color to bluish purple (RGB: 75, 0, 130)
   strokeWeight(0.5); // Stroke width to match SVG
 
+  // Calculate the center of the polygons
+  let centerX = 0;
+  let centerY = 0;
+  let totalPoints = 0;
+
+  polygons.forEach(polygon => {
+    polygon.forEach(vertex => {
+      centerX += vertex[0];
+      centerY += vertex[1];
+      totalPoints++;
+    });
+  });
+
+  centerX /= totalPoints;
+  centerY /= totalPoints;
+
+  // Calculate the offset to move everything to the center
+  let offsetX = width / 2 - centerX * 2;
+  let offsetY = height / 2 - centerY * 2;
+
   // Generate particles for each polygon
   polygons.forEach(polygon => {
     for (let i = 0; i < numParticles; i++) {
-      let p = createParticleInPolygon(polygon);
+      let p = createParticleInPolygon(polygon, offsetX, offsetY);
       if (p !== null) {
         particles.push(p);
       }
@@ -52,16 +72,20 @@ function draw() {
   background(255); // Clear the background to white every frame
 
   // Calculate the smaller offset for all polygons
-  let offsetY = sin(frameCount * 0.07) * 2.5; // Keep this for movement
+  let offsetY = sin(frameCount * 0.07) * 5; // Keep this for movement, doubled
 
+  // Apply the translation for centering
+  translate(-100,-200); // Center the canvas
+  
   // Draw all polygons
   polygons.forEach((polygon, i) => {
     fill(0); // Set fill color to black for all polygons
     stroke(255); // Ensure stroke color is bluish purple for all polygons
     beginShape();
     polygon.forEach(vertexCoord => {
-      let animatedY = vertexCoord[1] + ((i % 2 === 0) ? offsetY : -offsetY); // Upward for even indices, downward for odd indices
-      vertex(vertexCoord[0] + 200, animatedY); // Move x-coordinate of each vertex by 200 pixels
+      let animatedY = vertexCoord[1] * 2 + ((i % 2 === 0) ? offsetY : -offsetY); // Scale Y-coordinates and animate
+      let animatedX = vertexCoord[0] * 2; // Scale X-coordinates
+      vertex(animatedX, animatedY); // Use scaled coordinates
     });
     endShape(CLOSE);
   });
@@ -74,23 +98,27 @@ function draw() {
 }
 
 // Function to create a particle within the bounds of a polygon
-function createParticleInPolygon(polygon) {
+function createParticleInPolygon(polygon, offsetX, offsetY) {
   // Create a bounding box for the polygon
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
   polygon.forEach(vertex => {
-    minX = min(minX, vertex[0]);
-    minY = min(minY, vertex[1]);
-    maxX = max(maxX, vertex[0]);
-    maxY = max(maxY, vertex[1]);
+    minX = min(minX, vertex[0] * 2); // Scale the x-coordinate
+    minY = min(minY, vertex[1] * 2); // Scale the y-coordinate
+    maxX = max(maxX, vertex[0] * 2); // Scale the x-coordinate
+    maxY = max(maxY, vertex[1] * 2); // Scale the y-coordinate
   });
 
   // Generate random position within the bounding box
-  let x = random(minX, maxX);
-  let y = random(minY, maxY);
+  let x = random(minX, maxX); // Scale the random x-coordinate
+  let y = random(minY, maxY); // Scale the random y-coordinate
+
+  // Apply the offset to the particle position
+  x += offsetX;
+  y += offsetY;
 
   // Check if the generated point is inside the polygon
   if (isPointInPolygon(x, y, polygon)) {
-    return new Particle(x, y, polygon); // Return a new particle with polygon bounds
+    return new Particle(x, y, polygon); // Return a new particle with scaled coordinates
   }
   return null; // Return null if not inside the polygon
 }
@@ -99,8 +127,8 @@ function createParticleInPolygon(polygon) {
 function isPointInPolygon(x, y, polygon) {
   let inside = false;
   for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
-    let xi = polygon[i][0], yi = polygon[i][1];
-    let xj = polygon[j][0], yj = polygon[j][1];
+    let xi = polygon[i][0] * 2, yi = polygon[i][1] * 2; // Scale vertices
+    let xj = polygon[j][0] * 2, yj = polygon[j][1] * 2; // Scale vertices
     
     let intersect = ((yi > y) != (yj > y)) &&
                     (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
