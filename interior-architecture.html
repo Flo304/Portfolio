@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="architecture-page">
+<body class="architecture-page" onload="redirectToMallorca()">
     <!-- Sidebar -->
     <div class="sidebar">
         <h1>PROJECTS</h1>
@@ -17,7 +17,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li>
-                    <a href="interior-architecture.html"class='active'>Projects</a>
+                    <a href="interior-architecture.html" class="active">Projects</a>
                     <ul>
                         <li><a href="c-mallorca.html">Escal</a></li>
                         <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
@@ -32,18 +32,18 @@
                         <li><a href="stool.html">Stool</a></li>
                     </ul>
                 </li>
-                <li>
-                    
-                </li>
-                
-                
+            </ul>
         </nav>
     </div>
 
     <div class="container">
-        
-            </p>
-        </section>
+        <!-- The page will automatically redirect to c-mallorca.html -->
     </div>
+
+    <script>
+        function redirectToMallorca() {
+            window.location.href = "c-mallorca.html";  // Redirect to c-mallorca.html on page load
+        }
+    </script>
 </body>
 </html>
