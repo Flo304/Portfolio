@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 50px; /* This moves the sidebar down */
+    margin-top: 20px; /* This moves the sidebar down */
     z-index: 1; /* Ensure sidebar is above the animation */
 }
 

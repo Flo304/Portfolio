@@ -12,20 +12,32 @@
             margin: 0;
             overflow: hidden;  /* Prevent scrolling */
         }
+
+        /* Hide the dropdown by default */
+        .projects-dropdown {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        /* When the menu is active, show the dropdown */
+        .active-dropdown .projects-dropdown {
+            display: block;
+        }
     </style>
 </head>
 <body class="home-page">
     <!-- Sidebar -->
     <div class="sidebar">
-        <h1>Architecture & Design</h1>
-        <p class="name">Flora </p>
+        <h1>PORTFOLIO</h1>
+        <p class="name">Flora Berkowitz</p>
         <nav>
             <ul>
                 <li><a href="index.html" class='active'>Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li>
+                <li class="projects-dropdown-toggle">
                     <a href="interior-architecture.html">Projects</a>
-                    <ul>
+                    <ul class="projects-dropdown">
                         <li><a href="c-mallorca.html">Escal</a></li>
                         <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
                         <li><a href="modernruin.html">Modern Ruin</a></li>
@@ -58,5 +70,13 @@
     <!-- Add the p5.js library and your sketch file here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js"></script>
+    <script>
+        // JavaScript to toggle the dropdown visibility
+        document.querySelector('.projects-dropdown-toggle > a').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default action (page reload)
+            const parentLi = event.target.parentNode;
+            parentLi.classList.toggle('active-dropdown');
+        });
+    </script>
 </body>
 </html>
