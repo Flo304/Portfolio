@@ -75,7 +75,7 @@ function draw() {
   let offsetY = sin(frameCount * 0.07) * 5; // Keep this for movement, doubled
 
   // Apply the translation for centering
-  translate(-100,-200); // Center the canvas
+  translate(-600,-200); // Center the canvas
   
   // Draw all polygons
   polygons.forEach((polygon, i) => {
