@@ -32,7 +32,7 @@ class Particle {
 }
 
 function setup() {
-  createCanvas(1682, 1190); // Double the canvas size
+  createCanvas(1682, 1190); // Canvas size
   background(0); // Clear background to black
   stroke(75, 0, 130); // Stroke color to bluish purple (RGB: 75, 0, 130)
   strokeWeight(0.5); // Stroke width to match SVG
@@ -68,15 +68,13 @@ function setup() {
   });
 }
 
+
 function draw() {
   background(255); // Clear the background to white every frame
 
   // Calculate the smaller offset for all polygons
   let offsetY = sin(frameCount * 0.07) * 5; // Keep this for movement, doubled
 
-  // Apply the translation for centering
-  translate(-600,-200); // Center the canvas
-  
   // Draw all polygons
   polygons.forEach((polygon, i) => {
     fill(0); // Set fill color to black for all polygons
@@ -96,6 +94,7 @@ function draw() {
     p.display(); // Display particle
   });
 }
+
 
 // Function to create a particle within the bounds of a polygon
 function createParticleInPolygon(polygon, offsetX, offsetY) {
