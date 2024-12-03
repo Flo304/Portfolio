@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecture - Portfolio</title>
+    <title>Projects - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;  /* Prevent scrolling */
+        }
+
+        /* Hide the dropdown by default */
+        .projects-dropdown {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        /* When the menu is active, show the dropdown */
+        .active-dropdown .projects-dropdown {
+            display: block;
+        }
+    </style>
 </head>
-<body class="architecture-page" onload="redirectToMallorca()">
+
+<body class="architecture-page">
     <!-- Sidebar -->
     <div class="sidebar">
         <h1>PROJECTS</h1>
-        <p class="name">Flora </p>
+        <p class="name">Flora</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -36,14 +56,25 @@
         </nav>
     </div>
 
-    <div class="container">
-        <!-- The page will automatically redirect to c-mallorca.html -->
+    <!-- Main content (Animation in the center) -->
+    <div class="cube-container">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
     </div>
 
-    <script>
-        function redirectToMallorca() {
-            window.location.href = "c-mallorca.html";  // Redirect to c-mallorca.html on page load
-        }
-    </script>
+    <!-- Add the p5.js library and your sketch file here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+
+    <!-- Link to external JS file for dropdown functionality -->
+    <script src="dropdown.js"></script>
+
 </body>
 </html>
+

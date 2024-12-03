@@ -12,18 +12,6 @@
             margin: 0;
             overflow: hidden;  /* Prevent scrolling */
         }
-
-        /* Hide the dropdown by default */
-        .projects-dropdown {
-            display: none;
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        /* When the menu is active, show the dropdown */
-        .active-dropdown .projects-dropdown {
-            display: block;
-        }
     </style>
 </head>
 <body class="home-page">
@@ -35,20 +23,10 @@
             <ul>
                 <li><a href="index.html" class='active'>Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="projects-dropdown-toggle">
+                <li>
                     <a href="interior-architecture.html">Projects</a>
-                    <ul class="projects-dropdown">
-                        <li><a href="c-mallorca.html">Escal</a></li>
-                        <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
-                        <li><a href="modernruin.html">Modern Ruin</a></li>
-                        <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
-                        <li><a href="bag.html">Syn_3D</a></li>
-                        <li><a href="syn.html">Syn</a></li>
-                        <li><a href="osbproject.html">OSB Project</a></li>
-                        <li><a href="bathroom.html">Bathroom</a></li>
-                        <li><a href="teawi.html">Teawi</a></li>
-                        <li><a href="groove.html">Groove</a></li>
-                        <li><a href="stool.html">Stool</a></li>
+                    <ul>
+                        
                     </ul>
                 </li>
             </ul>
@@ -70,13 +48,5 @@
     <!-- Add the p5.js library and your sketch file here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js"></script>
-    <script>
-        // JavaScript to toggle the dropdown visibility
-        document.querySelector('.projects-dropdown-toggle > a').addEventListener('click', function(event) {
-            event.preventDefault();  // Prevent the default action (page reload)
-            const parentLi = event.target.parentNode;
-            parentLi.classList.toggle('active-dropdown');
-        });
-    </script>
 </body>
 </html>
