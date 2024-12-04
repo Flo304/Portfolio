@@ -32,7 +32,9 @@ class Particle {
 }
 
 function setup() {
-  createCanvas(1682, 1190); // Canvas size
+  // Create canvas inside the animation container
+  let canvas = createCanvas(1682, 1190); // Canvas size
+  canvas.parent('animation-container'); // Attach canvas to the container div
   background(0); // Clear background to black
   stroke(75, 0, 130); // Stroke color to bluish purple (RGB: 75, 0, 130)
   strokeWeight(0.5); // Stroke width to match SVG
@@ -74,15 +76,16 @@ function draw() {
 
   // Calculate the smaller offset for all polygons
   let offsetY = sin(frameCount * 0.07) * 5; // Keep this for movement, doubled
+  let offsetX = sin(frameCount * 0.07) * 5; // Add the offsetX here for animation
 
-  // Draw all polygons
+  // Draw all polygons with the applied offsets
   polygons.forEach((polygon, i) => {
     fill(0); // Set fill color to black for all polygons
     stroke(255); // Ensure stroke color is bluish purple for all polygons
     beginShape();
     polygon.forEach(vertexCoord => {
       let animatedY = vertexCoord[1] * 2 + ((i % 2 === 0) ? offsetY : -offsetY); // Scale Y-coordinates and animate
-      let animatedX = vertexCoord[0] * 2; // Scale X-coordinates
+      let animatedX = vertexCoord[0] * 2 + offsetX; // Apply offset to X-coordinates
       vertex(animatedX, animatedY); // Use scaled coordinates
     });
     endShape(CLOSE);
@@ -94,6 +97,7 @@ function draw() {
     p.display(); // Display particle
   });
 }
+
 
 
 // Function to create a particle within the bounds of a polygon
@@ -138,6 +142,7 @@ function isPointInPolygon(x, y, polygon) {
   return inside;
 }
 
+
 // Define polygons using arrays of vertex coordinates
 let polygons = [
   [ [511.78, 310.71], [476.03, 326.9], [441.18, 310.87], [477.6, 294.02], [511.78, 310.71] ], // Polygon 0
@@ -159,4 +164,3 @@ let polygons = [
   [ [512.71, 302.7], [476.97, 285.96], [477.08, 293.46], [513.2, 310.51], [512.71, 302.7] ], // Polygon 16
   [ [476.04, 335.33], [440.29, 351.51], [405.43, 335.48], [441.85, 318.64], [476.04, 335.33] ]  // Polygon 17
 ];
-
