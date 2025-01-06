@@ -6,7 +6,23 @@
     <title>Syn_3D - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-       
+        /* Container for the image and text */
+        .image-text-container {
+            max-width: 50%; /* Limit the container width to match the image */
+            margin: 120px auto 20px auto; /* Add top and bottom margins */
+            margin-left: 100px; /* Add consistent left margin */
+        }
+
+        .image-text-container img {
+            width: 100%; /* Image takes full width of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .image-text-container p {
+            margin: 30px 0 0 0; /* Add a small gap between the image and text */
+            font-size: 16px; /* Adjust text size */
+            text-align: justify; /* Optional: Justify the text for better alignment */
+        }
 
         /* Active link style */
         nav ul li a.active {
@@ -30,7 +46,7 @@
                         <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
                         <li><a href="modernruin.html">Modern Ruin</a></li>
                         <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
-                        <li><a href="bag.html"class='active'>Syn_3D</a></li>
+                        <li><a href="bag.html" class="active">Syn_3D</a></li>
                         <li><a href="syn.html">Syn</a></li>
                         <li><a href="osbproject.html">OSB Project</a></li>
                         <li><a href="bathroom.html">Bathroom</a></li>
@@ -39,18 +55,18 @@
                         <li><a href="stool.html">Stool</a></li>
                     </ul>
                 </li>
-                <li>
-                    
-                </li>
-                
             </ul>
         </nav>
     </div>
 
     <!-- Main content area -->
     <div class="content">
-        <section>
-            <img src="Assets/bagsyn.jpg" alt="Stone and Wood Bathroom" style="max-width: 50%; height: auto; margin-top: 120px; margin-bottom: 20px; margin-left: 100px"/>
+        <section class="image-text-container">
+            <img src="Assets/bagsyn.jpg" alt="Stone and Wood Bathroom" />
+            <p>Syn_3D is a soft baguette bag made out of 3D printed PLA mesh and assembled with a cotton string.</p>
+            <p>Syn_3D invites people to question traditional modes of production of meshes for in the textil industry by using FDM 3D printing to create more responsible, artistic designs. Each bag is a wearable art piece, merging technology and personal expression. Syn_3D tries to minimise waste and rethink how products are made.
+
+               
         </section>
     </div>
 </body>
