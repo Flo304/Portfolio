@@ -1,4 +1,4 @@
-let images = ['Assets/render15.png']; // Array of image filenames
+let images = ['Assets/A1.png', 'Assets/A2.png', 'Assets/A3.png' ]; // Array of image filenames
 let currentIndex = 0; // Start with the first image
 let slideInterval;
 
@@ -16,11 +16,20 @@ function createImageSlider() {
     img.style.opacity = 0;
     setTimeout(() => img.style.opacity = 1, 100); // Fade-in effect
 
+    // Set the size and placement of the image here
+    img.style.maxWidth = '80%'; // Control size (80% of the container width)
+    img.style.maxHeight = '80%'; // Control size (80% of the container height)
+    img.style.objectFit = 'contain'; // Ensures the image scales without distortion
+    img.style.position = 'absolute'; // Positioning within the container
+    img.style.top = '50%'; // Center vertically
+    img.style.left = '50%'; // Center horizontally
+    img.style.transform = 'translate(-50%, -50%)'; // Adjust to truly center the image
+
     // After 3 seconds, move to the next image
     setTimeout(() => {
         currentIndex = (currentIndex + 1) % images.length; // Loop through images
         createImageSlider(); // Call the function again to change image
-    }, 3000);
+    }, 6000);
 }
 
 // Initialize the image slider
