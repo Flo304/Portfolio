@@ -133,9 +133,9 @@ nav ul li a.active {
 
 
 #animation-container {
-    width: 1000px; /* Set a fixed width for the animation container */
-    height: 700px; /* Set a fixed height for the animation container */
-    position: fixed; /* Allow free positioning */
+    width: 100px; /* Set a fixed width for the animation container */
+    height: 70px; /* Set a fixed height for the animation container */
+    position: cen; /* Allow free positioning */
     top: -200px; /* Adjust vertical position */
     left: 10px; /* Adjust horizontal position */
     border: 2px solid rgba(0, 0, 0, 0); /* Optional: Add border for visibility */
