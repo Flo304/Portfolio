@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Ruin - Portfolio</title>
+    <title>Comfyui Style Learning for Architecture - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -27,30 +27,31 @@
             margin-bottom: 10px;
         }
 
-        .active {
+        nav ul li a.active {
             font-weight: bold;
         }
 
-        .image-row {
-    display: flex;
-    margin-top: 200px;
-}
+        /* New: Image grid styling */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 200px 40px; /* row gap = 20px, column gap = 60px */
+            margin-top: 115px; /* your preferred spacing from the top */
+            justify-content: center;
+        }
 
-.image-row img {
-    width: 40%; /* Keep the image size */
-    height: auto;
-}
-
-.left-img {
-    margin-right: 40px; /* Adjust spacing between the two */
-}
-
+        .image-grid img {
+            width: 35%;
+            height: auto;
+            
+            
+        }
     </style>
 </head>
-<body class="modernruin-page">
+<body class="osbproject-page">
     <!-- Sidebar -->
     <div class="sidebar">
-        <h1>ModernRuin</h1>
+        <h1>OSB </h1>
         <p class="name">Flora Berkowitz </p>
         <nav>
             <ul>
@@ -59,10 +60,10 @@
                 <li>
                     <a href="interior-architecture.html">Projects</a>
                     <ul>
-                        <li><a href="Living-warmth.html">Living warmth</a></li>
-                        <li><a href="lora.html">Comfyui Style Learning for Architecture</a></li>
+                        <li><a href="Living-warmth.html">Living-warmth</a></li>
+                        <li><a href="lora.html"class='active'>Comfyui Style Learning for Architecture</a></li>
                         <li><a href="bag.html">Syn_3D</a></li>
-                        <li><a href="modernruin.html"class='active'>Modern Ruin</a></li>
+                        <li><a href="modernruin.html">Modern Ruin</a></li>
                         <li><a href="c-mallorca.html">Escal</a></li>
                         <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
                         <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
@@ -72,6 +73,7 @@
                         <li><a href="teawi.html">Teawi</a></li>
                         <li><a href="groove.html">Groove</a></li>
                         <li><a href="stool.html">Stool</a></li>
+                        
                     </ul>
                 </li>
             </ul>
@@ -81,23 +83,23 @@
     <!-- Main content area -->
     <div class="content">
         <section>
-            <img src="Assets/A12.png" alt="OSB Project Plans" style="max-width: 50%; height: auto; margin-top: 115px; margin-bottom: 20px; margin-left: 20px;">
-            <img src="Assets/Mrpage.jpg" alt="OSB Project Plans" style="max-width: 90%; height: auto; margin-top: 183px; margin-bottom: 20px; margin-left: 60px;">
-           
-            <!-- Image row for last two pictures -->
-            <div class="image-row">
-                <img src="Assets/Mr511.png" class="left-img" alt="Image 1">
-                <img src="Assets/A55.png" class="right-img" alt="Image 2">
+            <!-- Image grid -->
+            <div class="image-grid">
+                <img src="Assets/LW5.png" alt="OSB Project Plans">
+                <img src="Assets/LW2.png" alt="OSB Project Plans">
+                <img src="Assets/LW4.png" alt="OSB Project Plans">
+                <img src="Assets/LW3.png" alt="OSB Project Plans">
             </div>
-            
 
             <!-- Go Up Link -->
             <a href="#top" class="go-up">Top</a>
         </section>
 
+        <!-- Additional image -->
         <section>
-            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px">
+            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px;">
         </section>
     </div>
 </body>
 </html>
+
