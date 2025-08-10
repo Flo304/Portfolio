@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bathroom - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-       
-
         /* Active link style */
         nav ul li a.active {
             font-weight: bold; /* Make active link bold */
+        }
+
+        /* COPYRIGHT BANNER */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Add bottom padding so content doesn't get hidden behind the footer */
+        .content {
+            padding-bottom: 40px;
         }
     </style>
 </head>
@@ -36,16 +53,12 @@
                         <li><a href="designing-with-other-intelligences.html">Designing with Other Intelligences</a></li>
                         <li><a href="syn.html">Syn</a></li>
                         <li><a href="osbproject.html">OSB Project</a></li>
-                        <li><a href="bathroom.html"class='active'>Bathroom</a></li>
+                        <li><a href="bathroom.html" class="active">Bathroom</a></li>
                         <li><a href="teawi.html">Teawi</a></li>
                         <li><a href="groove.html">Groove</a></li>
                         <li><a href="stool.html">Stool</a></li>
                     </ul>
                 </li>
-                <li>
-                    
-                </li>
-            
             </ul>
         </nav>
     </div>
@@ -53,8 +66,17 @@
     <!-- Main content area -->
     <div class="content">
         <section>
-            <img src="Assets/StoneAndWoodBathroom12.04.22 copy.jpg" alt="Stone and Wood Bathroom" style="max-width: 100%; height: auto; margin-top: -75px; margin-bottom: 20px;"/>
+            <img src="Assets/StoneAndWoodBathroom12.04.22 copy.jpg" alt="Stone and Wood Bathroom" style="max-width: 100%; height: auto; margin-top: -75px; margin-bottom: 20px;" />
         </section>
     </div>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berkos. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

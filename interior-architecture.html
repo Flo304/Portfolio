@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
         html, body {
             height: 100%;
             margin: 0;
-            overflow: hidden;  /* Prevent scrolling */
+            /* Changed overflow to visible to show fixed footer */
+            overflow: visible;
         }
 
         /* Hide the dropdown by default */
@@ -25,7 +26,24 @@
             display: block;
         }
 
-        
+        /* Copyright banner fixed at bottom */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Optional: push up animation container so it is not hidden behind footer */
+        .animation-container {
+            padding-bottom: 40px; /* height of footer + some spacing */
+        }
     </style>
 </head>
 
@@ -60,8 +78,6 @@
         </nav>
     </div>
 
-    
-
     <!-- Container for p5.js animation -->
     <div class="animation-container" id="animation-container"></div>
 
@@ -72,5 +88,14 @@
     <!-- Link to external JS file for dropdown functionality -->
     <script src="dropdown.js"></script>
 
+    <!-- COPYRIGHT BANNER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berko. All rights reserved.
+    </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

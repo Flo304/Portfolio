@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Syn - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
         
         
@@ -87,6 +87,25 @@
             width: 49%; /* Each image takes up 50% of the container width */
             height: auto; /* Maintain image aspect ratio */
         }
+
+        /* COPYRIGHT BANNER */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Add bottom padding so content doesn't get hidden behind the footer */
+        .content {
+            padding-bottom: 40px;
+        }
     </style>
 </head>
 <body class="syn-page"> <!-- Unique class for styling -->
@@ -124,38 +143,47 @@
     <div class="content">
         <section>
             <video width="1000" controls autoplay muted style="margin-top: 70px; margin-bottom:100px">
-                <source src="Assets/Test1FinalVideoMdef.mp4" type="video/mp4">
+                <source src="Assets/Test1FinalVideoMdef.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             
             <p class="name1">
-                What is Syn? Syn is about creating spaces for us to connect with non-human organisms in urban environments, using scientific knowledge and hands-on prototyping. Nature is captivating, yet it operates in ways that differ from how we think or how artificial systems work. Sometimes, its complexity can feel almost like *magic*. Let’s explore the micro world to better understand it from our human perspective.
+                What is Syn? Syn is about creating spaces for us to connect with non-human organisms in urban environments, using scientific knowledge and hands-on prototyping. Nature is captivating, yet it operates in ways that differ from how we think or how artificial systems work. Sometimes, its complexity can feel almost like <em>magic</em>. Let’s explore the micro world to better understand it from our human perspective.
             </p>
         </section>
 
         <!-- Row of two images -->
         <div class="image-row">
-            <img src="Assets/7ac62cdc-e645-491d-8d7a-43e3e15eb40b.jpg" alt="Stone and Wood Bathroom"/>
-            <img src="Assets/8ebef97f-b0a1-4861-8757-0f0c0f9926f9.JPG" alt="Stone and Wood Bathroom"/>
+            <img src="Assets/7ac62cdc-e645-491d-8d7a-43e3e15eb40b.jpg" alt="Stone and Wood Bathroom" />
+            <img src="Assets/8ebef97f-b0a1-4861-8757-0f0c0f9926f9.JPG" alt="Stone and Wood Bathroom" />
         </div>
         <p class="name2">
             During my Master's research, I became fascinated by non-human intelligences. Our current Anthropocene environment often makes us forget that humans aren’t the only beings with intelligence; other organisms, too, can solve problems beyond our comprehension. This realisation is humbling and challenges us to rethink the hierarchy of life. For example, micro-organisms play a vital role in our ecosystem. Though invisible to the naked eye, we depend on them more than we realise.
         </p>
-        <img src="Assets/DSC02120-2.jpg" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 200px; margin-bottom: 20px;"/>
+        <img src="Assets/DSC02120-2.jpg" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 200px; margin-bottom: 20px;" />
         <p class="name3">
             The installation consisted of a totem made out of wood, containing microbial fuell cells filled with soil, hooked to a power harvester board and Arduino. The installation investigated galvanic reactions in soil and microbial fuel cells as a way to expose scientific principles and render them accessible to other designers or artists. Galvanic reactions and microbial fuel cells are both ways to interact and prototype with energy produced by our local environment. 
         </p>
 
-        <img src="Assets/DSCF2415.JPG" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 200px; margin-bottom: 200px;"/>
+        <img src="Assets/DSCF2415.JPG" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 200px; margin-bottom: 200px;" />
         <p class="name4">
             The soil microbial fuel cells are placed together to gather energy from each cell. The energy is then used to displace the body of soil on its own when human presence is detected. By using the combination of non-human intelligence, human and computational tools, we empower the body of soil to have a different hybrid interaction in our environment.
         </p>
-        <img src="Assets/DSC02068-2.jpg" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 1px; margin-bottom: 20px;"/>
+        <img src="Assets/DSC02068-2.jpg" alt="Stone and Wood Bathroom" style="max-width: 95.5%; height: auto; margin-top: 1px; margin-bottom: 20px;" />
         <!-- Go Up Link -->
         <a href="#top" class="go-up">Top</a>
         <section>
-            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px">
+            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px" />
         </section>
     </div>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berko. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

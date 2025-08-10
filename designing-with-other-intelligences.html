@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Designing with Other Intelligences - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Roboto Font -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> <!-- Roboto Font -->
+    <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS -->
     <style>
         
         .go-up {
@@ -28,6 +28,25 @@
             width: 100%; /* Ensures images are responsive */
             height: auto; /* Maintains aspect ratio */
             margin: 20px 0; /* Adds space above and below each image */
+        }
+
+        /* COPYRIGHT BANNER */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Add bottom padding so content doesn't get hidden behind the footer */
+        .container {
+            padding-bottom: 40px;
         }
     </style>
 </head>
@@ -72,29 +91,38 @@
     <div class="container">
         <section>
             <!-- First image -->
-            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image">
-            <img src="Assets/3Dpproject.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 60px; margin-bottom: 80px;">
+            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image" />
+            <img src="Assets/3Dpproject.jpg" alt="Teawi Project Image" style="width: 100%; height: auto; margin-top: 60px; margin-bottom: 80px;" />
             
             <!-- Second image -->
-            <img src="Assets/Modelimagewithcode.png" alt="Teawi Project Image" style="margin-bottom: 80px;">
+            <img src="Assets/Modelimagewithcode.png" alt="Teawi Project Image" style="margin-bottom: 80px;" />
             
             <!-- Third image -->
-            <img src="Assets/ModelImage1.png" alt="Teawi Project Image">
+            <img src="Assets/ModelImage1.png" alt="Teawi Project Image" />
 
             <!-- Fourth image -->
-            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image">
+            <img src="Assets/3Dprinetdstructure.png" alt="Teawi Project Image" />
 
             <!-- Fifth image -->
-            <img src="Assets/3dprintedb.jpg" alt="Teawi Project Image">
+            <img src="Assets/3dprintedb.jpg" alt="Teawi Project Image" />
 
             <!-- Sixth image -->
-            <img src="Assets/Asset3.png" alt="Teawi Project Image">
+            <img src="Assets/Asset3.png" alt="Teawi Project Image" />
             <!-- Go Up Link -->
         <a href="#top" class="go-up">Top</a>
         <section>
-            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px">
+            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px" />
         </section>
     </div>
 
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berko. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+

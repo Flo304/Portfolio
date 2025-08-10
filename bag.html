@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Syn_3D - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
         /* Container for the image and text */
         .image-text-container {
@@ -28,9 +28,35 @@
         nav ul li a.active {
             font-weight: bold; /* Make active link bold */
         }
+
+        /* COPYRIGHT BANNER */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Push content up so it won't be hidden behind footer */
+        .content {
+            padding-bottom: 40px; /* Adjust if footer height changes */
+        }
+
+        /* Allow fixed footer to be visible */
+        html, body {
+            overflow: visible;
+            height: 100%;
+            margin: 0;
+        }
     </style>
 </head>
-<body class="bag-page"> <!-- Unique class for styling -->
+<body class="bag-page">
     <!-- Sidebar -->
     <div class="sidebar">
         <h1>Syn_3D</h1>
@@ -44,7 +70,7 @@
                     <ul>
                         <li><a href="Living-warmth.html">Living warmth</a></li>
                         <li><a href="lora.html">Comfyui Style Learning for Architecture</a></li>
-                        <li><a href="bag.html"class='active'>Syn_3D</a></li>
+                        <li><a href="bag.html" class="active">Syn_3D</a></li>
                         <li><a href="modernruin.html">Modern Ruin</a></li>
                         <li><a href="c-mallorca.html">Escal</a></li>
                         <li><a href="computational-paradoxes-in-Arch.html">Computational paradoxes in Arch</a></li>
@@ -70,10 +96,17 @@
             <img src="Assets/IMG_5832.jpg" alt="Stone and Wood Bathroom" />
             <img src="Assets/bagsyn.jpg" alt="Stone and Wood Bathroom" />
             <p>Syn_3D is a soft baguette bag made out of 3D printed PLA mesh and assembled with a cotton string.</p>
-            <p>Syn_3D invites people to question traditional modes of production of meshes for in the textil industry by using FDM 3D printing to create more responsible, artistic designs. Each bag is a wearable art piece, merging technology and personal expression. Syn_3D tries to minimise waste and rethink how products are made.
-
-               
+            <p>Syn_3D invites people to question traditional modes of production of meshes for in the textil industry by using FDM 3D printing to create more responsible, artistic designs. Each bag is a wearable art piece, merging technology and personal expression. Syn_3D tries to minimise waste and rethink how products are made.</p>
         </section>
     </div>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berko. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Stool - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-       
         .go-up {
             display: block;
             font-family: 'Roboto Mono', Arial, sans-serif; /* Ensures it uses the same font */
@@ -16,36 +15,52 @@
             text-decoration: none;
             color: #000;
             margin-left: -100px;
-            
         }
 
-    
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-    
+
         nav li {
             margin-bottom: 10px;
         }
-    
+
         nav ul li a.active {
             font-weight: bold;
         }
-    
+
         /* Change text size in the section */
         section {
             font-size: 12px; /* Set the desired text size */
             line-height: 1.6; /* Adjust line height for better readability */
             margin-top: 227px; /* Add space above the text */
             margin-right: 227px;
-            margin-bottom: 225px; /* Add space above the text */
+            margin-bottom: 225px; /* Add space below the text */
             text-align: justify; /* Justify the text */
         }
+
+        /* COPYRIGHT BANNER */
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 10px;
+            z-index: 1000;
+        }
+
+        /* Add bottom padding so content isn't hidden behind footer */
+        .content {
+            padding-bottom: 40px;
+        }
     </style>
-    
 </head>
-<body class="stool-page"> <!-- Unique class for styling -->
+<body class="stool-page">
     <!-- Sidebar -->
     <div class="sidebar">
         <h1>Stool</h1>
@@ -69,41 +84,41 @@
                         <li><a href="bathroom.html">Bathroom</a></li>
                         <li><a href="teawi.html">Teawi</a></li>
                         <li><a href="groove.html">Groove</a></li>
-                        <li><a href="stool.html"class='active'>Stool</a></li>
-                        
+                        <li><a href="stool.html" class="active">Stool</a></li>
                     </ul>
                 </li>
-                <li>
-                    
-                </li>
-                
             </ul>
         </nav>
     </div>
 
     <!-- Main content area -->
     <div class="content">
+        <!-- First image -->
+        <img src="Assets/photofinalePullStool.jpg" alt="Stool Project Image" style="max-width: 50%; height: auto; margin-top: 115px; margin-bottom: 20px;" />
+
         
 
-        <!-- First image -->
-        <img src="Assets/photofinalePullStool.jpg" alt="Stool Project Image" style="max-width: 50%; height: auto; margin-top: 115px; margin-bottom: 20px;">
-        <section>
-            <!-- Add any additional text or descriptions here -->
-            The project investigates the use of computational methods in architecture, focusing on how these technologies can expand and transform traditional design practices. By employing algorithms, the project generates dynamic and interactive designs that reinterpret classical architectural paradoxes, including the Penrose staircase, anamorphosis, and the Da Vinci staircase. These historical forms serve as a foundation for exploring how digital technologies can challenge conventional notions of space and geometry. The emphasis is not only on creating 3D models or animations but on uncovering the computational processes that drive these digital designs, often concealed within user-friendly software interfaces.
-
-            Through computational tools like particle systems and polygonal shapes, the project delves into the mathematical and geometric properties of these forms, creating constantly evolving structures that reflect deeper architectural principles. The study offers a critical understanding of the methodologies and technologies used, questioning how these tools can reveal new insights into both historical forms and future architectural practices. By exploring these computational processes, the project challenges the viewer to rethink the role of technology in shaping architectural identities in the modern era.
-        </section>
-
         <!-- Second image -->
-        <img src="Assets/detail1.jpeg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
+        <img src="Assets/detail1.jpeg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;" />
 
         <!-- Third image -->
-        <img src="Assets/stool1.jpg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;">
+        <img src="Assets/stool1.jpg" alt="Stool Project Image" style="max-width: 80%; height: auto; margin-top: 20px; margin-bottom: 20px;" />
+
         <!-- Go Up Link -->
         <a href="#top" class="go-up">Top</a>
+
         <section>
-            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px">
+            <img src="Assets/W1.png" alt="Further C. Mallorca Plan" style="max-width: 20%; height: auto; margin-top: 115px; margin-bottom: 20px" />
         </section>
     </div>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="copyright">
+        © <span id="year"></span> Flora Berko. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
