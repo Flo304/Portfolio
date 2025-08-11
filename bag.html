@@ -6,27 +6,30 @@
     <title>Syn_3D - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Container for the image and text */
-        .image-text-container {
-            max-width: 50%; /* Limit the container width to match the image */
-            margin: 120px auto 20px auto; /* Add top and bottom margins */
-            margin-left: 100px; /* Add consistent left margin */
+        /* Image grid styling */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 200px 40px; /* row gap = 200px, column gap = 40px */
+            margin-top: 120px;
+            justify-content: center;
         }
 
-        .image-text-container img {
-            width: 100%; /* Image takes full width of the container */
-            height: auto; /* Maintain aspect ratio */
+        .image-grid img {
+            width: 45%;
+            height: auto;
         }
 
-        .image-text-container p {
-            margin: 30px 0 0 0; /* Add a small gap between the image and text */
-            font-size: 16px; /* Adjust text size */
-            text-align: justify; /* Optional: Justify the text for better alignment */
+        /* Description styling */
+        .description {
+            max-width: 60%;
+            margin: 50px auto 120px auto;
+            font-size: 16px;
+            text-align: justify;
         }
 
-        /* Active link style */
         nav ul li a.active {
-            font-weight: bold; /* Make active link bold */
+            font-weight: bold;
         }
 
         /* COPYRIGHT BANNER */
@@ -43,12 +46,10 @@
             z-index: 1000;
         }
 
-        /* Push content up so it won't be hidden behind footer */
         .content {
-            padding-bottom: 40px; /* Adjust if footer height changes */
+            padding-bottom: 40px;
         }
 
-        /* Allow fixed footer to be visible */
         html, body {
             overflow: visible;
             height: 100%;
@@ -89,14 +90,24 @@
 
     <!-- Main content area -->
     <div class="content">
-        <section class="image-text-container">
-            <img src="Assets/0004-01.jpg" alt="Stone and Wood Bathroom" />
-            <img src="Assets/000402.jpg" alt="Stone and Wood Bathroom" />
-            <img src="Assets/IMG_5833.jpg" alt="Stone and Wood Bathroom" />
-            <img src="Assets/IMG_5832.jpg" alt="Stone and Wood Bathroom" />
-            <img src="Assets/bagsyn.jpg" alt="Stone and Wood Bathroom" />
-            <p>Syn_3D is a soft baguette bag made out of 3D printed PLA mesh and assembled with a cotton string.</p>
-            <p>Syn_3D invites people to question traditional modes of production of meshes for in the textil industry by using FDM 3D printing to create more responsible, artistic designs. Each bag is a wearable art piece, merging technology and personal expression. Syn_3D tries to minimise waste and rethink how products are made.</p>
+        <section>
+            <!-- Image grid -->
+            <div class="image-grid">
+                <img src="Assets/0004-01.jpg" alt="Syn_3D" />
+                <img src="Assets/000402.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_5833.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_5832.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_5965.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_5936.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_4863.jpg" alt="Syn_3D" />
+                <img src="Assets/IMG_5112.jpg" alt="Syn_3D" />
+            </div>
+
+            <!-- Description -->
+            <div class="description">
+                <p>Syn_3D is a soft baguette bag made out of 3D printed PLA mesh and assembled with a cotton string.</p>
+                <p>Syn_3D invites people to question traditional modes of production of meshes for the textile industry by using FDM 3D printing to create more responsible, artistic designs. Each bag is a wearable art piece, merging technology and personal expression. Syn_3D tries to minimise waste and rethink how products are made.</p>
+            </div>
         </section>
     </div>
 
