@@ -1,4 +1,4 @@
-let images = ['Assets/A1.png', 'Assets/A2.png', 'Assets/A3.png' ]; // Array of image filenames
+let images = ['Assets/A1.png', 'Assets/Render12.png', 'Assets/DSC02157.jpg', 'Assets/Website202242copy.jpg', 'Assets/A2.png', 'Assets/Website202copy.jpg', 'Assets/lamp1.jpg', ]; // Array of image filenames
 let currentIndex = 0; // Start with the first image
 let slideInterval;
 
