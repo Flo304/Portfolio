@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Home - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css" />
-    
+
     <style>
-        html, body {
-            height: 100%;
+
+        /* =========================
+           GLOBAL
+        ========================== */
+
+        html,
+        body {
             margin: 0;
-            overflow: visible;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Roboto', sans-serif;
         }
 
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        /* =========================
+           LAYOUT
+        ========================== */
+
         .layout {
-            margin-top: 0px;
             width: 100%;
+            margin-top: 0;
         }
 
         .row {
             display: flex;
             width: 100%;
-            margin-bottom: 0px; /* unchanged */
-        }
-
-        /* =========================
-           KEEP YOUR ORIGINAL RULES
-        ========================== */
-
-        .row-two img {
-            width: 40%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .row-center {
-            justify-content: center;
-        }
-
-        .row-center img {
-            width: 60%;
-            height: auto;
-        }
-
-        .row-left img {
-            width: 50%;
-            height: auto;
+            margin-bottom: 0;
         }
 
         .row-right {
             justify-content: flex-end;
         }
 
-        .row-right img {
-            width: 60%;
+        .row-center {
+            justify-content: center;
         }
 
-        .row-two img:first-child {
-            width: 60%;
+        /* =========================
+           WIDTH UTILITIES
+        ========================== */
+
+        .w-30 {
+            width: 30%;
         }
 
-        .row-two img:last-child {
+        .w-40 {
             width: 40%;
         }
 
+        .w-45 {
+            width: 45%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
         /* =========================
-           NEW: OPTIONAL RULE SYSTEM
-           (does NOT override yours)
+           OPTIONAL SPACING
         ========================== */
 
-        .row-single {} /* semantic only */
-        .row-three {
-            flex-wrap: wrap;
+        .mt-50 {
+            margin-top: 50px;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .ml-50 {
+            margin-left: 50px;
+        }
+
+        .ml-100 {
+            margin-left: 100px;
         }
 
         /* =========================
-           DECALAGE (clean version)
-        ========================== */
-
-        .offset-down {
-            transform: translateY(15%);
-        }
-
-        .offset-up {
-            transform: translateY(-15%);
-        }
-
-        .offset-right {
-            transform: translateX(15%);
-        }
-
-        .offset-left {
-            transform: translateX(-15%);
-        }
-
-        /* =========================
-           NAVBAR (UNCHANGED)
+           SIDEBAR
         ========================== */
 
         .sidebar {
@@ -115,10 +125,9 @@
             display: inline-block;
         }
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
+        /* =========================
+           FOOTER
+        ========================== */
 
         .copyright {
             position: fixed;
@@ -132,94 +141,237 @@
             font-size: 10px;
             z-index: 1000;
         }
+
     </style>
 </head>
 
 <body class="home-page">
 
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
     <div class="sidebar">
+
         <p class="name">Flora Berko</p>
+
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li></li>
+
+                <li>
+                    <a href="index.html" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
             </ul>
         </nav>
+
     </div>
+
+    <!-- =========================
+         LAYOUT
+    ========================== -->
 
     <div class="layout">
 
-        <!-- SAME VISUAL -->
-        <div class="row row-two">
-            <img src="Assets/Instagram post - 305 copy.png" style="width: 50%;" />
-            <img src="Assets/Instagram post - 304 (1) copy.png" style="width: 50%;" />
+        <!-- ROW 1 -->
+
+        <div class="row">
+
+            <img
+                class="w-50"
+                src="Assets/Instagram post - 305 copy.png"
+                alt="Project image"
+            />
+
+            <img
+                class="w-50"
+                src="Assets/Instagram post - 304 (1) copy.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 2 -->
+
+        <div class="row row-right">
+
+            <img
+                class="w-40"
+                src="Assets/Instagram post - 312.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 3 -->
+
+        <div class="row">
+
+            <img
+                class="w-30"
+                src="Assets/desighfarmh.png"
+                alt="Project image"
+            />
+
+            <img
+                class="w-40"
+                src="Assets/A4 - 36 1.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 4 -->
+
+        <div class="row row-right">
+
+            <img
+                class="w-40"
+                src="Assets/Screenshot 2026-04-11 at 19.10.30 1.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 5 -->
+
+        <div class="row">
+
+            <img
+                class="w-40"
+                src="Assets/IMG_5833 1.png"
+                alt="Project image"
+            />
+
+            <img
+                class="w-40"
+                src="Assets/bagmesh.jpg"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 6 -->
+
+        <div class="row row-right">
+
+            <img
+                class="w-45"
+                src="Assets/Toy.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 7 -->
+
+        <div class="row">
+
+            <img
+                class="w-30"
+                src="Assets/Untitled38.png"
+                alt="Project image"
+            />
+
+            <img
+                class="w-40"
+                src="Assets/Lamp.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 8 -->
+
+        <div class="row row-right">
+
+            <img
+                class="w-40"
+                src="Assets/DSCF2415 2.png"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 9 -->
+
+        <div class="row">
+
+            <img
+                class="w-30"
+                src="Assets/IMG_8877.jpg"
+                alt="Project image"
+            />
+
+            <img
+                class="w-40"
+                src="Assets/reppan.jpg"
+                alt="Project image"
+            />
+
+        </div>
+
+        <!-- ROW 10 -->
+
+        <div class="row row-right">
+
+            <img
+                class="w-40"
+                src="Assets/panelsrep2.png"
+                alt="Project image"
+            />
+
+        </div>
+
+         <!-- ROW 11 -->
+
+         <div class="row">
+
+            <img
+                class="w-30"
+                src="Assets/Screenshot-2026-05-13.png"
+                alt="Project image"
+            />
+
+            <img
+                class="w-40"
+                src="Assets/reppan.jpg"
+                alt="Project image"
+            />
+
         </div>
 
         
-
-        <div class="row row-right row-single">
-            <img src="Assets/Instagram post - 312.png" style="width: 40%;" />
-        </div>
-
-
-        <div class="row row-two">
-            <img src="Assets/desighfarmh.png" style="width: 30%;" />
-            <img src="Assets/A4 - 36 1.png" style="width: 40%;" />
-        </div>
-        
-
-
-
-        <div class="row row-right row-single">
-            <img src="Assets/Screenshot 2026-04-11 at 19.10.30 1.png" style="width: 40%; height: 40%;" />
-        </div>
-
-        <div class="row row-two">
-            <img src="Assets/IMG_5833 1.png" style="width: 40%;" />
-            <img src="Assets/bagmesh.jpg" style="width: 40%;" />
-        </div>
-
-        <div class="row row-right row-single">
-            <img src="Assets/Toy.png" style="width: 45%; height: 45%;" />
-        </div>
-
-    
-
-        <div class="row row-two">
-            <img src="Assets/Untitled38.png" style="width: 30%;" />
-            <img src="Assets/Lamp.png" style="width: 40%;" />
-        </div>
-
-        
-
-        <div class="row row-right row-single">
-            <img src="Assets/DSCF2415 2.png" style="width: 40%;" />
-        </div>
-
-        <div class="row row-two">
-            <img src="Assets/IMG_8877.jpg" style="width: 30%;" />
-            <img src="Assets/reppan.jpg" style="width: 40%;" />
-        </div>
-
-       
-
-        
-
-        <div class="row row-right row-single">
-            <img src="Assets/panelsrep2.png" style="width: 40%;" />
-        </div>
-
 
     </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer class="copyright">
         © <span id="year"></span> Flora Berko. All rights reserved.
     </footer>
 
+    <!-- =========================
+         SCRIPT
+    ========================== -->
+
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
     </script>
 
 </body>
+
 </html>
