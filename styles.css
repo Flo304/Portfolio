@@ -8,83 +8,89 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    background: #fff;
 }
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 /* =========================
-   LAYOUT SYSTEM
+   GRID (FULL SCREEN UNDERLAY)
 ========================= */
 
-.layout {
+.grid {
+    display: grid;
+
+    /* 2 images per row */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* NO spacing */
+    gap: 0;
+
+    /* IMPORTANT: full screen */
     width: 100%;
-}
+    height: auto;
 
-/* rows */
-.row {
-    display: flex;
-    width: 100%;
-}
-
-/* alignment helpers */
-.row-right {
-    justify-content: flex-end;
-}
-
-.row-center {
-    justify-content: center;
+    /* send behind sidebar */
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================
-   PROJECT LINK STYLE
+   CLUSTERS
 ========================= */
 
-.project {
+.cluster {
     display: block;
+    width: 100%;
     text-decoration: none;
 }
 
-.project img {
+/* images fill cell */
+.cluster img {
     width: 100%;
     height: auto;
+    display: block;
+}
+
+/* full width cluster */
+.cluster-large {
+    grid-column: span 2;
 }
 
 /* =========================
-   WIDTH SYSTEM
-========================= */
-
-.w-30 { width: 30%; }
-.w-40 { width: 40%; }
-.w-45 { width: 45%; }
-.w-50 { width: 50%; }
-.w-60 { width: 60%; }
-
-/* =========================
-   SIDEBAR
+   SIDEBAR (OVERLAY LAYER)
 ========================= */
 
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 200px;
     height: 100vh;
-    z-index: 9999;
+
+    z-index: 9999; /* MUST be above images */
+
     background: transparent;
+
     padding-left: 50px;
+    padding-top: 20px;
+
+    /* IMPORTANT: ensures it doesn't affect layout */
+    pointer-events: auto;
 }
 
 /* sidebar text */
-.sidebar p,
-.sidebar nav {
-    display: block;
+.sidebar p {
+    margin: 0 0 20px 0;
+    font-size: 18px;
 }
 
-/* nav styling (minimal, non-conflicting) */
+/* navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -109,11 +115,16 @@ nav ul li a {
     position: fixed;
     bottom: 0;
     left: 0;
+
     width: 100%;
+
     background: rgba(255,255,255,0.9);
     color: black;
+
     text-align: center;
     padding: 8px 0;
+
     font-size: 10px;
+
     z-index: 1000;
 }
