@@ -18,51 +18,62 @@ img {
 }
 
 /* =========================
-   GRID (FULL SCREEN UNDERLAY)
+   MAIN LAYOUT
 ========================= */
 
 .grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
-    /* 2 images per row */
-    grid-template-columns: repeat(2, 1fr);
-
-    /* NO spacing */
-    gap: 0;
-
-    /* IMPORTANT: full screen */
     width: 100%;
-    height: auto;
 
-    /* send behind sidebar */
     position: relative;
     z-index: 1;
 }
 
 /* =========================
-  *** CLUSTERS ***
+   CLUSTERS
 ========================= */
 
 .cluster {
-    display: block;
+    display: grid;
+
+    /* two images on top row */
+    grid-template-columns: 1fr 1fr;
+
     width: 100%;
     text-decoration: none;
 }
 
-/* images fill cell */
+/* images */
+
 .cluster img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* full width cluster */
+/* third image spans entire cluster width */
+
+.cluster img:nth-child(3) {
+    grid-column: auto; /* removes full-width override */
+}
+
+
+/* single image projects */
+
+.cluster img:only-child {
+    grid-column: auto; /* keeps it inside one column */
+}
+
+/* featured project */
+
 .cluster-large {
-    grid-column: span 2;
+    width: 100%;
 }
 
 /* =========================
-   SIDEBAR (OVERLAY LAYER)
+   SIDEBAR
 ========================= */
 
 .sidebar {
@@ -73,24 +84,25 @@ img {
     width: 200px;
     height: 100vh;
 
-    z-index: 9999; /* MUST be above images */
+    z-index: 9999;
 
     background: transparent;
 
     padding-left: 50px;
     padding-top: 20px;
 
-    /* IMPORTANT: ensures it doesn't affect layout */
     pointer-events: auto;
 }
 
 /* sidebar text */
+
 .sidebar p {
     margin: 0 0 20px 0;
     font-size: 18px;
 }
 
 /* navigation */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -108,7 +120,7 @@ nav ul li a {
 }
 
 /* =========================
-   FOOTER 
+   FOOTER
 ========================= */
 
 .copyright {
